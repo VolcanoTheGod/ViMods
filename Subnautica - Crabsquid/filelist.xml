@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentpackage name="Subnautica - Crabsquid" modversion="1.0.1" corepackage="False" gameversion="0.20.16.1">
+  <Character file="%ModDir%/Crabsquid.xml" />
+  <Particles file="%ModDir%/Particles/CrabParticlePrefab.xml" />
+</contentpackage>
