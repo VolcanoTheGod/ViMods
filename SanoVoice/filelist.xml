@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentpackage name="SanoVoice" modversion="1.0.2" corepackage="False" steamworkshopid="2813627458" gameversion="0.17.16.0" expectedhash="4ED06CE4B82145755A8A62578D4482CC">
+  <Other file="%ModDir%/Items/signalcomp.png" />
+  <Other file="%ModDir%/Items/Sano_braindamage.ogg" />
+  <Other file="%ModDir%/Items/Sano_braindead.ogg" />
+  <Other file="%ModDir%/Items/Sano_beep.ogg" />
+  <Other file="%ModDir%/Items/Sano_flatline.ogg" />
+  <Other file="%ModDir%/Items/Sano_breathing_high.ogg" />
+  <Other file="%ModDir%/Items/Sano_breathing_low.ogg" />
+  <Other file="%ModDir%/Items/Sano_breathing_not.ogg" />
+  <Other file="%ModDir%/Items/Sano_breathing_stable.ogg" />
+  <Other file="%ModDir%/Items/Sano_cause.ogg" />
+  <Other file="%ModDir%/Items/Sano_dead.ogg" />
+  <Other file="%ModDir%/Items/Sano_death.ogg" />
+  <Other file="%ModDir%/Items/Sano_heartrate_high.ogg" />
+  <Other file="%ModDir%/Items/Sano_heartrate_low.ogg" />
+  <Other file="%ModDir%/Items/Sano_heartrate_stable.ogg" />
+  <Other file="%ModDir%/Items/Sano_main_line.ogg" />
+  <Other file="%ModDir%/Items/Sano_neuro_stable.ogg" />
+  <Other file="%ModDir%/Items/Sano_nowconscious.ogg" />
+  <Other file="%ModDir%/Items/Sano_online.ogg" />
+  <Other file="%ModDir%/Items/Sano_organ_high.ogg" />
+  <Other file="%ModDir%/Items/Sano_organ_stable.ogg" />
+  <Other file="%ModDir%/Items/Sano_oxygen_high.ogg" />
+  <Other file="%ModDir%/Items/Sano_oxygen_low.ogg" />
+  <Other file="%ModDir%/Items/Sano_oxygen_stable.ogg" />
+  <Other file="%ModDir%/Items/Sano_pressure_high.ogg" />
+  <Other file="%ModDir%/Items/Sano_pressure_low.ogg" />
+  <Other file="%ModDir%/Items/Sano_pressure_stable.ogg" />
+  <Other file="%ModDir%/Items/Sano_surgeryended.ogg" />
+  <Other file="%ModDir%/Items/Sano_surgerystart.ogg" />
+  <Other file="%ModDir%/Items/Sano_unconscious.ogg" />
+  <Other file="%ModDir%/Items/Sano_vitality_high.ogg" />
+  <Other file="%ModDir%/Items/Sano_vitality_low.ogg" />
+  <Other file="%ModDir%/hqdefault.jpg" />
+  <Item file="%ModDir%/Items/items.xml" />
+</contentpackage>

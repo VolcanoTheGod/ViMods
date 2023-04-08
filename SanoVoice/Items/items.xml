@@ -1,0 +1,1383 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <Item name="S/BrainDamage" identifier="Sano_braindamage" category="Electrical" Tags="smallitem,sound" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light" isshootable="true">
+    <PreferredContainer primary="reactorcab,storagecab" />
+    <PreferredContainer primary="wreckreactorcab,wreckstoragecab" minamount="0" maxamount="1" spawnprobability="0" />
+    <Deconstruct time="10">
+      <Item identifier="fpgacircuit" />
+      <Item identifier="tin" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="2">
+      <RequiredSkill identifier="electrical" level="40" />
+      <RequiredSkill identifier="medical" level="20" />
+      <RequiredItem identifier="fpgacircuit" />
+      <RequiredItem identifier="copper" />
+    </Fabricate>
+    <Price baseprice="40" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="1.25" minavailable="1" />
+      <Price locationtype="city" multiplier="1.25" minavailable="1" />
+      <Price locationtype="research" multiplier="0.6" minavailable="2" />
+      <Price locationtype="military" multiplier="1.0" sold="false" />
+      <Price locationtype="mine" multiplier="1.1" sold="false" />
+    </Price>
+    <InventoryIcon texture="%ModDir%/Items/signalcomp.png" sourcerect="0,0,28,28" origin="0.5,0.5" />
+    <Sprite texture="signalcomp.png" depth="0.8" sourcerect="0,0,28,28" origin="0.5,0.5" />
+    <Body radius="20" density="20" />
+    <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" PickingTime="5.0" aimpos="65,-10" handle1="0,0" attachable="true" aimable="true">
+      <RequiredItem items="wrench" type="Equipped" />
+      <StatusEffect type="Always" target="This" condition="60" />
+    </Holdable>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate">
+        <StatusEffect type="OnUse" target="This" condition="-200" />
+        <StatusEffect type="OnUse" target="This" condition="-200" CheckConditionalAlways="true">
+          <Conditional condition="gte 5" />
+          <sound file="%ModDir%/Items/Sano_braindamage.ogg" type="OnUse" range="300.0" loop="false" volume="1.0" />
+        </StatusEffect>
+      </input>
+      <input name="set_state" displayname="connection.setstate">
+        <StatusEffect type="OnUse" target="This" condition="-200" />
+        <StatusEffect type="OnUse" target="This" condition="-200" CheckConditionalAlways="true">
+          <Conditional condition="gte 5" />
+          <sound file="%ModDir%/Items/Sano_braindamage.ogg" type="OnUse" range="300.0" loop="false" volume="1.0" />
+        </StatusEffect>
+      </input>
+    </ConnectionPanel>
+  </Item>
+  <Item name="S/BrainDead" identifier="Sano_braindead" category="Electrical" Tags="smallitem,sound" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light" isshootable="true">
+    <PreferredContainer primary="reactorcab,storagecab" />
+    <PreferredContainer primary="wreckreactorcab,wreckstoragecab" minamount="0" maxamount="1" spawnprobability="0" />
+    <Deconstruct time="10">
+      <Item identifier="fpgacircuit" />
+      <Item identifier="tin" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="2">
+      <RequiredSkill identifier="electrical" level="40" />
+      <RequiredSkill identifier="medical" level="20" />
+      <RequiredItem identifier="fpgacircuit" />
+      <RequiredItem identifier="copper" />
+    </Fabricate>
+    <Price baseprice="40" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="1.25" minavailable="1" />
+      <Price locationtype="city" multiplier="1.25" minavailable="1" />
+      <Price locationtype="research" multiplier="0.6" minavailable="2" />
+      <Price locationtype="military" multiplier="1.0" sold="false" />
+      <Price locationtype="mine" multiplier="1.1" sold="false" />
+    </Price>
+    <InventoryIcon texture="%ModDir%/Items/signalcomp.png" sourcerect="0,0,28,28" origin="0.5,0.5" />
+    <Sprite texture="signalcomp.png" depth="0.8" sourcerect="0,0,28,28" origin="0.5,0.5" />
+    <Body radius="20" density="20" />
+    <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" PickingTime="5.0" aimpos="65,-10" handle1="0,0" attachable="true" aimable="true">
+      <RequiredItem items="wrench" type="Equipped" />
+      <StatusEffect type="Always" target="This" condition="60" />
+    </Holdable>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate">
+        <StatusEffect type="OnUse" target="This" condition="-200" />
+        <StatusEffect type="OnUse" target="This" condition="-200" CheckConditionalAlways="true">
+          <Conditional condition="gte 5" />
+          <sound file="%ModDir%/Items/Sano_braindead.ogg" type="OnUse" range="300.0" loop="false" volume="1.0" />
+        </StatusEffect>
+      </input>
+      <input name="set_state" displayname="connection.setstate">
+        <StatusEffect type="OnUse" target="This" condition="-200" />
+        <StatusEffect type="OnUse" target="This" condition="-200" CheckConditionalAlways="true">
+          <Conditional condition="gte 5" />
+          <sound file="%ModDir%/Items/Sano_braindead.ogg" type="OnUse" range="300.0" loop="false" volume="1.0" />
+        </StatusEffect>
+      </input>
+    </ConnectionPanel>
+  </Item>
+  <Item name="S/Beep" identifier="Sano_beep" category="Electrical" Tags="smallitem,sound" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light" isshootable="true">
+    <PreferredContainer primary="reactorcab,storagecab" />
+    <PreferredContainer primary="wreckreactorcab,wreckstoragecab" minamount="0" maxamount="1" spawnprobability="0" />
+    <Deconstruct time="10">
+      <Item identifier="fpgacircuit" />
+      <Item identifier="tin" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="2">
+      <RequiredSkill identifier="electrical" level="40" />
+      <RequiredSkill identifier="medical" level="20" />
+      <RequiredItem identifier="fpgacircuit" />
+      <RequiredItem identifier="copper" />
+    </Fabricate>
+    <Price baseprice="40" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="1.25" minavailable="1" />
+      <Price locationtype="city" multiplier="1.25" minavailable="1" />
+      <Price locationtype="research" multiplier="0.6" minavailable="2" />
+      <Price locationtype="military" multiplier="1.0" sold="false" />
+      <Price locationtype="mine" multiplier="1.1" sold="false" />
+    </Price>
+    <InventoryIcon texture="%ModDir%/Items/signalcomp.png" sourcerect="0,0,28,28" origin="0.5,0.5" />
+    <Sprite texture="signalcomp.png" depth="0.8" sourcerect="0,0,28,28" origin="0.5,0.5" />
+    <Body radius="20" density="20" />
+    <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" PickingTime="5.0" aimpos="65,-10" handle1="0,0" attachable="true" aimable="true">
+      <RequiredItem items="wrench" type="Equipped" />
+      <StatusEffect type="Always" target="This" condition="60" />
+    </Holdable>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate">
+        <StatusEffect type="OnUse" target="This" condition="-200" />
+        <StatusEffect type="OnUse" target="This" condition="-200" CheckConditionalAlways="true">
+          <Conditional condition="gte 5" />
+          <sound file="%ModDir%/Items/Sano_beep.ogg" type="OnUse" range="300.0" loop="false" volume="1.0" />
+        </StatusEffect>
+      </input>
+      <input name="set_state" displayname="connection.setstate">
+        <StatusEffect type="OnUse" target="This" condition="-200" />
+        <StatusEffect type="OnUse" target="This" condition="-200" CheckConditionalAlways="true">
+          <Conditional condition="gte 5" />
+          <sound file="%ModDir%/Items/Sano_beep.ogg" type="OnUse" range="300.0" loop="false" volume="1.0" />
+        </StatusEffect>
+      </input>
+    </ConnectionPanel>
+  </Item>
+  <Item name="S/Flatline" identifier="Sano_flatline" category="Electrical" Tags="smallitem,sound" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light" isshootable="true">
+    <PreferredContainer primary="reactorcab,storagecab" />
+    <PreferredContainer primary="wreckreactorcab,wreckstoragecab" minamount="0" maxamount="1" spawnprobability="0" />
+    <Deconstruct time="10">
+      <Item identifier="fpgacircuit" />
+      <Item identifier="tin" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="2">
+      <RequiredSkill identifier="electrical" level="40" />
+      <RequiredSkill identifier="medical" level="20" />
+      <RequiredItem identifier="fpgacircuit" />
+      <RequiredItem identifier="copper" />
+    </Fabricate>
+    <Price baseprice="40" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="1.25" minavailable="1" />
+      <Price locationtype="city" multiplier="1.25" minavailable="1" />
+      <Price locationtype="research" multiplier="0.6" minavailable="2" />
+      <Price locationtype="military" multiplier="1.0" sold="false" />
+      <Price locationtype="mine" multiplier="1.1" sold="false" />
+    </Price>
+    <InventoryIcon texture="%ModDir%/Items/signalcomp.png" sourcerect="0,0,28,28" origin="0.5,0.5" />
+    <Sprite texture="signalcomp.png" depth="0.8" sourcerect="0,0,28,28" origin="0.5,0.5" />
+    <Body radius="20" density="20" />
+    <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" PickingTime="5.0" aimpos="65,-10" handle1="0,0" attachable="true" aimable="true">
+      <RequiredItem items="wrench" type="Equipped" />
+      <StatusEffect type="Always" target="This" condition="60" />
+    </Holdable>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate">
+        <StatusEffect type="OnUse" target="This" condition="-200" />
+        <StatusEffect type="OnUse" target="This" condition="-200" CheckConditionalAlways="true">
+          <Conditional condition="gte 5" />
+          <sound file="%ModDir%/Items/Sano_flatline.ogg" type="OnUse" range="300.0" loop="false" volume="1.0" />
+        </StatusEffect>
+      </input>
+      <input name="set_state" displayname="connection.setstate">
+        <StatusEffect type="OnUse" target="This" condition="-200" />
+        <StatusEffect type="OnUse" target="This" condition="-200" CheckConditionalAlways="true">
+          <Conditional condition="gte 5" />
+          <sound file="%ModDir%/Items/Sano_flatline.ogg" type="OnUse" range="300.0" loop="false" volume="1.0" />
+        </StatusEffect>
+      </input>
+    </ConnectionPanel>
+  </Item>
+  <Item name="S/BreathingHigh" identifier="Sano_breathing_high" category="Electrical" Tags="smallitem,sound" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light" isshootable="true">
+    <PreferredContainer primary="reactorcab,storagecab" />
+    <PreferredContainer primary="wreckreactorcab,wreckstoragecab" minamount="0" maxamount="1" spawnprobability="0" />
+    <Deconstruct time="10">
+      <Item identifier="fpgacircuit" />
+      <Item identifier="tin" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="2">
+      <RequiredSkill identifier="electrical" level="40" />
+      <RequiredSkill identifier="medical" level="20" />
+      <RequiredItem identifier="fpgacircuit" />
+      <RequiredItem identifier="copper" />
+    </Fabricate>
+    <Price baseprice="40" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="1.25" minavailable="1" />
+      <Price locationtype="city" multiplier="1.25" minavailable="1" />
+      <Price locationtype="research" multiplier="0.6" minavailable="2" />
+      <Price locationtype="military" multiplier="1.0" sold="false" />
+      <Price locationtype="mine" multiplier="1.1" sold="false" />
+    </Price>
+    <InventoryIcon texture="%ModDir%/Items/signalcomp.png" sourcerect="0,0,28,28" origin="0.5,0.5" />
+    <Sprite texture="signalcomp.png" depth="0.8" sourcerect="0,0,28,28" origin="0.5,0.5" />
+    <Body radius="20" density="20" />
+    <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" PickingTime="5.0" aimpos="65,-10" handle1="0,0" attachable="true" aimable="true">
+      <RequiredItem items="wrench" type="Equipped" />
+      <StatusEffect type="Always" target="This" condition="60" />
+    </Holdable>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate">
+        <StatusEffect type="OnUse" target="This" condition="-200" />
+        <StatusEffect type="OnUse" target="This" condition="-200" CheckConditionalAlways="true">
+          <Conditional condition="gte 5" />
+          <sound file="%ModDir%/Items/Sano_breathing_high.ogg" type="OnUse" range="300.0" loop="false" volume="1.0" />
+        </StatusEffect>
+      </input>
+      <input name="set_state" displayname="connection.setstate">
+        <StatusEffect type="OnUse" target="This" condition="-200" />
+        <StatusEffect type="OnUse" target="This" condition="-200" CheckConditionalAlways="true">
+          <Conditional condition="gte 5" />
+          <sound file="%ModDir%/Items/Sano_breathing_high.ogg" type="OnUse" range="300.0" loop="false" volume="1.0" />
+        </StatusEffect>
+      </input>
+    </ConnectionPanel>
+  </Item>
+  <Item name="S/BreathingLow" identifier="Sano_breathing_low" category="Electrical" Tags="smallitem,sound" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light" isshootable="true">
+    <PreferredContainer primary="reactorcab,storagecab" />
+    <PreferredContainer primary="wreckreactorcab,wreckstoragecab" minamount="0" maxamount="1" spawnprobability="0" />
+    <Deconstruct time="10">
+      <Item identifier="fpgacircuit" />
+      <Item identifier="tin" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="2">
+      <RequiredSkill identifier="electrical" level="40" />
+      <RequiredSkill identifier="medical" level="20" />
+      <RequiredItem identifier="fpgacircuit" />
+      <RequiredItem identifier="copper" />
+    </Fabricate>
+    <Price baseprice="40" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="1.25" minavailable="1" />
+      <Price locationtype="city" multiplier="1.25" minavailable="1" />
+      <Price locationtype="research" multiplier="0.6" minavailable="2" />
+      <Price locationtype="military" multiplier="1.0" sold="false" />
+      <Price locationtype="mine" multiplier="1.1" sold="false" />
+    </Price>
+    <InventoryIcon texture="%ModDir%/Items/signalcomp.png" sourcerect="0,0,28,28" origin="0.5,0.5" />
+    <Sprite texture="signalcomp.png" depth="0.8" sourcerect="0,0,28,28" origin="0.5,0.5" />
+    <Body radius="20" density="20" />
+    <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" PickingTime="5.0" aimpos="65,-10" handle1="0,0" attachable="true" aimable="true">
+      <RequiredItem items="wrench" type="Equipped" />
+      <StatusEffect type="Always" target="This" condition="60" />
+    </Holdable>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate">
+        <StatusEffect type="OnUse" target="This" condition="-200" />
+        <StatusEffect type="OnUse" target="This" condition="-200" CheckConditionalAlways="true">
+          <Conditional condition="gte 5" />
+          <sound file="%ModDir%/Items/Sano_breathing_low.ogg" type="OnUse" range="200.0" loop="false" volume="1.0" />
+        </StatusEffect>
+      </input>
+      <input name="set_state" displayname="connection.setstate">
+        <StatusEffect type="OnUse" target="This" condition="-200" />
+        <StatusEffect type="OnUse" target="This" condition="-200" CheckConditionalAlways="true">
+          <Conditional condition="gte 5" />
+          <sound file="%ModDir%/Items/Sano_breathing_low.ogg" type="OnUse" range="300.0" loop="false" volume="1.0" />
+        </StatusEffect>
+      </input>
+    </ConnectionPanel>
+  </Item>
+  <Item name="S/BreathingNot" identifier="Sano_breathing_not" category="Electrical" Tags="smallitem,sound" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light" isshootable="true">
+    <PreferredContainer primary="reactorcab,storagecab" />
+    <PreferredContainer primary="wreckreactorcab,wreckstoragecab" minamount="0" maxamount="1" spawnprobability="0" />
+    <Deconstruct time="10">
+      <Item identifier="fpgacircuit" />
+      <Item identifier="tin" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="2">
+      <RequiredSkill identifier="electrical" level="40" />
+      <RequiredSkill identifier="medical" level="20" />
+      <RequiredItem identifier="fpgacircuit" />
+      <RequiredItem identifier="copper" />
+    </Fabricate>
+    <Price baseprice="40" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="1.25" minavailable="1" />
+      <Price locationtype="city" multiplier="1.25" minavailable="1" />
+      <Price locationtype="research" multiplier="0.6" minavailable="2" />
+      <Price locationtype="military" multiplier="1.0" sold="false" />
+      <Price locationtype="mine" multiplier="1.1" sold="false" />
+    </Price>
+    <InventoryIcon texture="%ModDir%/Items/signalcomp.png" sourcerect="0,0,28,28" origin="0.5,0.5" />
+    <Sprite texture="signalcomp.png" depth="0.8" sourcerect="0,0,28,28" origin="0.5,0.5" />
+    <Body radius="20" density="20" />
+    <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" PickingTime="5.0" aimpos="65,-10" handle1="0,0" attachable="true" aimable="true">
+      <RequiredItem items="wrench" type="Equipped" />
+      <StatusEffect type="Always" target="This" condition="60" />
+    </Holdable>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate">
+        <StatusEffect type="OnUse" target="This" condition="-200" />
+        <StatusEffect type="OnUse" target="This" condition="-200" CheckConditionalAlways="true">
+          <Conditional condition="gte 5" />
+          <sound file="%ModDir%/Items/Sano_breathing_not.ogg" type="OnUse" range="300.0" loop="false" volume="1.0" />
+        </StatusEffect>
+      </input>
+      <input name="set_state" displayname="connection.setstate">
+        <StatusEffect type="OnUse" target="This" condition="-200" />
+        <StatusEffect type="OnUse" target="This" condition="-200" CheckConditionalAlways="true">
+          <Conditional condition="gte 5" />
+          <sound file="%ModDir%/Items/Sano_breathing_not.ogg" type="OnUse" range="300.0" loop="false" volume="1.0" />
+        </StatusEffect>
+      </input>
+    </ConnectionPanel>
+  </Item>
+  <Item name="S/BreathingStable" identifier="Sano_breathing_stable" category="Electrical" Tags="smallitem,sound" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light" isshootable="true">
+    <PreferredContainer primary="reactorcab,storagecab" />
+    <PreferredContainer primary="wreckreactorcab,wreckstoragecab" minamount="0" maxamount="1" spawnprobability="0" />
+    <Deconstruct time="10">
+      <Item identifier="fpgacircuit" />
+      <Item identifier="tin" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="2">
+      <RequiredSkill identifier="electrical" level="40" />
+      <RequiredSkill identifier="medical" level="20" />
+      <RequiredItem identifier="fpgacircuit" />
+      <RequiredItem identifier="copper" />
+    </Fabricate>
+    <Price baseprice="40" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="1.25" minavailable="1" />
+      <Price locationtype="city" multiplier="1.25" minavailable="1" />
+      <Price locationtype="research" multiplier="0.6" minavailable="2" />
+      <Price locationtype="military" multiplier="1.0" sold="false" />
+      <Price locationtype="mine" multiplier="1.1" sold="false" />
+    </Price>
+    <InventoryIcon texture="%ModDir%/Items/signalcomp.png" sourcerect="0,0,28,28" origin="0.5,0.5" />
+    <Sprite texture="signalcomp.png" depth="0.8" sourcerect="0,0,28,28" origin="0.5,0.5" />
+    <Body radius="20" density="20" />
+    <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" PickingTime="5.0" aimpos="65,-10" handle1="0,0" attachable="true" aimable="true">
+      <RequiredItem items="wrench" type="Equipped" />
+      <StatusEffect type="Always" target="This" condition="60" />
+    </Holdable>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate">
+        <StatusEffect type="OnUse" target="This" condition="-200" />
+        <StatusEffect type="OnUse" target="This" condition="-200" CheckConditionalAlways="true">
+          <Conditional condition="gte 5" />
+          <sound file="%ModDir%/Items/Sano_breathing_stable.ogg" type="OnUse" range="300.0" loop="false" volume="1.0" />
+        </StatusEffect>
+      </input>
+      <input name="set_state" displayname="connection.setstate">
+        <StatusEffect type="OnUse" target="This" condition="-200" />
+        <StatusEffect type="OnUse" target="This" condition="-200" CheckConditionalAlways="true">
+          <Conditional condition="gte 5" />
+          <sound file="%ModDir%/Items/Sano_breathing_stable.ogg" type="OnUse" range="300.0" loop="false" volume="1.0" />
+        </StatusEffect>
+      </input>
+    </ConnectionPanel>
+  </Item>
+  <Item name="S/CauseOfDeath" identifier="Sano_cause" category="Electrical" Tags="smallitem,sound" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light" isshootable="true">
+    <PreferredContainer primary="reactorcab,storagecab" />
+    <PreferredContainer primary="wreckreactorcab,wreckstoragecab" minamount="0" maxamount="1" spawnprobability="0" />
+    <Deconstruct time="10">
+      <Item identifier="fpgacircuit" />
+      <Item identifier="tin" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="2">
+      <RequiredSkill identifier="electrical" level="40" />
+      <RequiredSkill identifier="medical" level="20" />
+      <RequiredItem identifier="fpgacircuit" />
+      <RequiredItem identifier="copper" />
+    </Fabricate>
+    <Price baseprice="40" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="1.25" minavailable="1" />
+      <Price locationtype="city" multiplier="1.25" minavailable="1" />
+      <Price locationtype="research" multiplier="0.6" minavailable="2" />
+      <Price locationtype="military" multiplier="1.0" sold="false" />
+      <Price locationtype="mine" multiplier="1.1" sold="false" />
+    </Price>
+    <InventoryIcon texture="%ModDir%/Items/signalcomp.png" sourcerect="0,0,28,28" origin="0.5,0.5" />
+    <Sprite texture="signalcomp.png" depth="0.8" sourcerect="0,0,28,28" origin="0.5,0.5" />
+    <Body radius="20" density="20" />
+    <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" PickingTime="5.0" aimpos="65,-10" handle1="0,0" attachable="true" aimable="true">
+      <RequiredItem items="wrench" type="Equipped" />
+      <StatusEffect type="Always" target="This" condition="60" />
+    </Holdable>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate">
+        <StatusEffect type="OnUse" target="This" condition="-200" />
+        <StatusEffect type="OnUse" target="This" condition="-200" CheckConditionalAlways="true">
+          <Conditional condition="gte 5" />
+          <sound file="%ModDir%/Items/Sano_cause.ogg" type="OnUse" range="300.0" loop="false" volume="1.0" />
+        </StatusEffect>
+      </input>
+      <input name="set_state" displayname="connection.setstate">
+        <StatusEffect type="OnUse" target="This" condition="-200" />
+        <StatusEffect type="OnUse" target="This" condition="-200" CheckConditionalAlways="true">
+          <Conditional condition="gte 5" />
+          <sound file="%ModDir%/Items/Sano_cause.ogg" type="OnUse" range="300.0" loop="false" volume="1.0" />
+        </StatusEffect>
+      </input>
+    </ConnectionPanel>
+  </Item>
+  <Item name="S/Dead" identifier="Sano_dead" category="Electrical" Tags="smallitem,sound" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light" isshootable="true">
+    <PreferredContainer primary="reactorcab,storagecab" />
+    <PreferredContainer primary="wreckreactorcab,wreckstoragecab" minamount="0" maxamount="1" spawnprobability="0" />
+    <Deconstruct time="10">
+      <Item identifier="fpgacircuit" />
+      <Item identifier="tin" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="2">
+      <RequiredSkill identifier="electrical" level="40" />
+      <RequiredSkill identifier="medical" level="20" />
+      <RequiredItem identifier="fpgacircuit" />
+      <RequiredItem identifier="copper" />
+    </Fabricate>
+    <Price baseprice="40" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="1.25" minavailable="1" />
+      <Price locationtype="city" multiplier="1.25" minavailable="1" />
+      <Price locationtype="research" multiplier="0.6" minavailable="2" />
+      <Price locationtype="military" multiplier="1.0" sold="false" />
+      <Price locationtype="mine" multiplier="1.1" sold="false" />
+    </Price>
+    <InventoryIcon texture="%ModDir%/Items/signalcomp.png" sourcerect="0,0,28,28" origin="0.5,0.5" />
+    <Sprite texture="signalcomp.png" depth="0.8" sourcerect="0,0,28,28" origin="0.5,0.5" />
+    <Body radius="20" density="20" />
+    <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" PickingTime="5.0" aimpos="65,-10" handle1="0,0" attachable="true" aimable="true">
+      <RequiredItem items="wrench" type="Equipped" />
+      <StatusEffect type="Always" target="This" condition="60" />
+    </Holdable>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate">
+        <StatusEffect type="OnUse" target="This" condition="-200" />
+        <StatusEffect type="OnUse" target="This" condition="-200" CheckConditionalAlways="true">
+          <Conditional condition="gte 5" />
+          <sound file="%ModDir%/Items/Sano_dead.ogg" type="OnUse" range="300.0" loop="false" volume="1.0" />
+        </StatusEffect>
+      </input>
+      <input name="set_state" displayname="connection.setstate">
+        <StatusEffect type="OnUse" target="This" condition="-200" />
+        <StatusEffect type="OnUse" target="This" condition="-200" CheckConditionalAlways="true">
+          <Conditional condition="gte 5" />
+          <sound file="%ModDir%/Items/Sano_dead.ogg" type="OnUse" range="300.0" loop="false" volume="1.0" />
+        </StatusEffect>
+      </input>
+    </ConnectionPanel>
+  </Item>
+  <Item name="S/Death" identifier="Sano_death" category="Electrical" Tags="smallitem,sound" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light" isshootable="true">
+    <PreferredContainer primary="reactorcab,storagecab" />
+    <PreferredContainer primary="wreckreactorcab,wreckstoragecab" minamount="0" maxamount="1" spawnprobability="0" />
+    <Deconstruct time="10">
+      <Item identifier="fpgacircuit" />
+      <Item identifier="tin" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="2">
+      <RequiredSkill identifier="electrical" level="40" />
+      <RequiredSkill identifier="medical" level="20" />
+      <RequiredItem identifier="fpgacircuit" />
+      <RequiredItem identifier="copper" />
+    </Fabricate>
+    <Price baseprice="40" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="1.25" minavailable="1" />
+      <Price locationtype="city" multiplier="1.25" minavailable="1" />
+      <Price locationtype="research" multiplier="0.6" minavailable="2" />
+      <Price locationtype="military" multiplier="1.0" sold="false" />
+      <Price locationtype="mine" multiplier="1.1" sold="false" />
+    </Price>
+    <InventoryIcon texture="%ModDir%/Items/signalcomp.png" sourcerect="0,0,28,28" origin="0.5,0.5" />
+    <Sprite texture="signalcomp.png" depth="0.8" sourcerect="0,0,28,28" origin="0.5,0.5" />
+    <Body radius="20" density="20" />
+    <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" PickingTime="5.0" aimpos="65,-10" handle1="0,0" attachable="true" aimable="true">
+      <RequiredItem items="wrench" type="Equipped" />
+      <StatusEffect type="Always" target="This" condition="60" />
+    </Holdable>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate">
+        <StatusEffect type="OnUse" target="This" condition="-200" />
+        <StatusEffect type="OnUse" target="This" condition="-200" CheckConditionalAlways="true">
+          <Conditional condition="gte 5" />
+          <sound file="%ModDir%/Items/Sano_death.ogg" type="OnUse" range="300.0" loop="false" volume="1.0" />
+        </StatusEffect>
+      </input>
+      <input name="set_state" displayname="connection.setstate">
+        <StatusEffect type="OnUse" target="This" condition="-200" />
+        <StatusEffect type="OnUse" target="This" condition="-200" CheckConditionalAlways="true">
+          <Conditional condition="gte 5" />
+          <sound file="%ModDir%/Items/Sano_death.ogg" type="OnUse" range="300.0" loop="false" volume="1.0" />
+        </StatusEffect>
+      </input>
+    </ConnectionPanel>
+  </Item>
+  <Item name="S/HeartrateHigh" identifier="Sano_heartrate_high" category="Electrical" Tags="smallitem,sound" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light" isshootable="true">
+    <PreferredContainer primary="reactorcab,storagecab" />
+    <PreferredContainer primary="wreckreactorcab,wreckstoragecab" minamount="0" maxamount="1" spawnprobability="0" />
+    <Deconstruct time="10">
+      <Item identifier="fpgacircuit" />
+      <Item identifier="tin" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="2">
+      <RequiredSkill identifier="electrical" level="40" />
+      <RequiredSkill identifier="medical" level="20" />
+      <RequiredItem identifier="fpgacircuit" />
+      <RequiredItem identifier="copper" />
+    </Fabricate>
+    <Price baseprice="40" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="1.25" minavailable="1" />
+      <Price locationtype="city" multiplier="1.25" minavailable="1" />
+      <Price locationtype="research" multiplier="0.6" minavailable="2" />
+      <Price locationtype="military" multiplier="1.0" sold="false" />
+      <Price locationtype="mine" multiplier="1.1" sold="false" />
+    </Price>
+    <InventoryIcon texture="%ModDir%/Items/signalcomp.png" sourcerect="0,0,28,28" origin="0.5,0.5" />
+    <Sprite texture="signalcomp.png" depth="0.8" sourcerect="0,0,28,28" origin="0.5,0.5" />
+    <Body radius="20" density="20" />
+    <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" PickingTime="5.0" aimpos="65,-10" handle1="0,0" attachable="true" aimable="true">
+      <RequiredItem items="wrench" type="Equipped" />
+      <StatusEffect type="Always" target="This" condition="60" />
+    </Holdable>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate">
+        <StatusEffect type="OnUse" target="This" condition="-200" />
+        <StatusEffect type="OnUse" target="This" condition="-200" CheckConditionalAlways="true">
+          <Conditional condition="gte 5" />
+          <sound file="%ModDir%/Items/Sano_heartrate_high.ogg" type="OnUse" range="300.0" loop="false" volume="1.0" />
+        </StatusEffect>
+      </input>
+      <input name="set_state" displayname="connection.setstate">
+        <StatusEffect type="OnUse" target="This" condition="-200" />
+        <StatusEffect type="OnUse" target="This" condition="-200" CheckConditionalAlways="true">
+          <Conditional condition="gte 5" />
+          <sound file="%ModDir%/Items/Sano_heartrate_high.ogg" type="OnUse" range="300.0" loop="false" volume="1.0" />
+        </StatusEffect>
+      </input>
+    </ConnectionPanel>
+  </Item>
+  <Item name="S/HeartrateLow" identifier="Sano_heartrate_low" category="Electrical" Tags="smallitem,sound" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light" isshootable="true">
+    <PreferredContainer primary="reactorcab,storagecab" />
+    <PreferredContainer primary="wreckreactorcab,wreckstoragecab" minamount="0" maxamount="1" spawnprobability="0" />
+    <Deconstruct time="10">
+      <Item identifier="fpgacircuit" />
+      <Item identifier="tin" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="2">
+      <RequiredSkill identifier="electrical" level="40" />
+      <RequiredSkill identifier="medical" level="20" />
+      <RequiredItem identifier="fpgacircuit" />
+      <RequiredItem identifier="copper" />
+    </Fabricate>
+    <Price baseprice="40" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="1.25" minavailable="1" />
+      <Price locationtype="city" multiplier="1.25" minavailable="1" />
+      <Price locationtype="research" multiplier="0.6" minavailable="2" />
+      <Price locationtype="military" multiplier="1.0" sold="false" />
+      <Price locationtype="mine" multiplier="1.1" sold="false" />
+    </Price>
+    <InventoryIcon texture="%ModDir%/Items/signalcomp.png" sourcerect="0,0,28,28" origin="0.5,0.5" />
+    <Sprite texture="signalcomp.png" depth="0.8" sourcerect="0,0,28,28" origin="0.5,0.5" />
+    <Body radius="20" density="20" />
+    <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" PickingTime="5.0" aimpos="65,-10" handle1="0,0" attachable="true" aimable="true">
+      <RequiredItem items="wrench" type="Equipped" />
+      <StatusEffect type="Always" target="This" condition="60" />
+    </Holdable>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate">
+        <StatusEffect type="OnUse" target="This" condition="-200" />
+        <StatusEffect type="OnUse" target="This" condition="-200" CheckConditionalAlways="true">
+          <Conditional condition="gte 5" />
+          <sound file="%ModDir%/Items/Sano_heartrate_low.ogg" type="OnUse" range="300.0" loop="false" volume="1.0" />
+        </StatusEffect>
+      </input>
+      <input name="set_state" displayname="connection.setstate">
+        <StatusEffect type="OnUse" target="This" condition="-200" />
+        <StatusEffect type="OnUse" target="This" condition="-200" CheckConditionalAlways="true">
+          <Conditional condition="gte 5" />
+          <sound file="%ModDir%/Items/Sano_heartrate_low.ogg" type="OnUse" range="300.0" loop="false" volume="1.0" />
+        </StatusEffect>
+      </input>
+    </ConnectionPanel>
+  </Item>
+  <Item name="S/HeartrateStable" identifier="Sano_heartrate_stable" category="Electrical" Tags="smallitem,sound" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light" isshootable="true">
+    <PreferredContainer primary="reactorcab,storagecab" />
+    <PreferredContainer primary="wreckreactorcab,wreckstoragecab" minamount="0" maxamount="1" spawnprobability="0" />
+    <Deconstruct time="10">
+      <Item identifier="fpgacircuit" />
+      <Item identifier="tin" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="2">
+      <RequiredSkill identifier="electrical" level="40" />
+      <RequiredSkill identifier="medical" level="20" />
+      <RequiredItem identifier="fpgacircuit" />
+      <RequiredItem identifier="copper" />
+    </Fabricate>
+    <Price baseprice="40" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="1.25" minavailable="1" />
+      <Price locationtype="city" multiplier="1.25" minavailable="1" />
+      <Price locationtype="research" multiplier="0.6" minavailable="2" />
+      <Price locationtype="military" multiplier="1.0" sold="false" />
+      <Price locationtype="mine" multiplier="1.1" sold="false" />
+    </Price>
+    <InventoryIcon texture="%ModDir%/Items/signalcomp.png" sourcerect="0,0,28,28" origin="0.5,0.5" />
+    <Sprite texture="signalcomp.png" depth="0.8" sourcerect="0,0,28,28" origin="0.5,0.5" />
+    <Body radius="20" density="20" />
+    <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" PickingTime="5.0" aimpos="65,-10" handle1="0,0" attachable="true" aimable="true">
+      <RequiredItem items="wrench" type="Equipped" />
+      <StatusEffect type="Always" target="This" condition="60" />
+    </Holdable>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate">
+        <StatusEffect type="OnUse" target="This" condition="-200" />
+        <StatusEffect type="OnUse" target="This" condition="-200" CheckConditionalAlways="true">
+          <Conditional condition="gte 5" />
+          <sound file="%ModDir%/Items/Sano_heartrate_stable.ogg" type="OnUse" range="300.0" loop="false" volume="1.0" />
+        </StatusEffect>
+      </input>
+      <input name="set_state" displayname="connection.setstate">
+        <StatusEffect type="OnUse" target="This" condition="-200" />
+        <StatusEffect type="OnUse" target="This" condition="-200" CheckConditionalAlways="true">
+          <Conditional condition="gte 5" />
+          <sound file="%ModDir%/Items/Sano_heartrate_stable.ogg" type="OnUse" range="300.0" loop="false" volume="1.0" />
+        </StatusEffect>
+      </input>
+    </ConnectionPanel>
+  </Item>
+  <Item name="S/MainLine" identifier="Sano_main_line" category="Electrical" Tags="smallitem,sound" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light" isshootable="true">
+    <PreferredContainer primary="reactorcab,storagecab" />
+    <PreferredContainer primary="wreckreactorcab,wreckstoragecab" minamount="0" maxamount="1" spawnprobability="0" />
+    <Deconstruct time="10">
+      <Item identifier="fpgacircuit" />
+      <Item identifier="tin" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="2">
+      <RequiredSkill identifier="electrical" level="40" />
+      <RequiredSkill identifier="medical" level="20" />
+      <RequiredItem identifier="fpgacircuit" />
+      <RequiredItem identifier="copper" />
+    </Fabricate>
+    <Price baseprice="40" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="1.25" minavailable="1" />
+      <Price locationtype="city" multiplier="1.25" minavailable="1" />
+      <Price locationtype="research" multiplier="0.6" minavailable="2" />
+      <Price locationtype="military" multiplier="1.0" sold="false" />
+      <Price locationtype="mine" multiplier="1.1" sold="false" />
+    </Price>
+    <InventoryIcon texture="%ModDir%/Items/signalcomp.png" sourcerect="0,0,28,28" origin="0.5,0.5" />
+    <Sprite texture="signalcomp.png" depth="0.8" sourcerect="0,0,28,28" origin="0.5,0.5" />
+    <Body radius="20" density="20" />
+    <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" PickingTime="5.0" aimpos="65,-10" handle1="0,0" attachable="true" aimable="true">
+      <RequiredItem items="wrench" type="Equipped" />
+      <StatusEffect type="Always" target="This" condition="60" />
+    </Holdable>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate">
+        <StatusEffect type="OnUse" target="This" condition="-200" />
+        <StatusEffect type="OnUse" target="This" condition="-200" CheckConditionalAlways="true">
+          <Conditional condition="gte 5" />
+          <sound file="%ModDir%/Items/Sano_main_line.ogg" type="OnUse" range="300.0" loop="false" volume="1.0" />
+        </StatusEffect>
+      </input>
+      <input name="set_state" displayname="connection.setstate">
+        <StatusEffect type="OnUse" target="This" condition="-200" />
+        <StatusEffect type="OnUse" target="This" condition="-200" CheckConditionalAlways="true">
+          <Conditional condition="gte 5" />
+          <sound file="%ModDir%/Items/Sano_main_line.ogg" type="OnUse" range="300.0" loop="false" volume="1.0" />
+        </StatusEffect>
+      </input>
+    </ConnectionPanel>
+  </Item>
+  <Item name="S/NeuroStable" identifier="Sano_neuro_stable" category="Electrical" Tags="smallitem,sound" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light" isshootable="true">
+    <PreferredContainer primary="reactorcab,storagecab" />
+    <PreferredContainer primary="wreckreactorcab,wreckstoragecab" minamount="0" maxamount="1" spawnprobability="0" />
+    <Deconstruct time="10">
+      <Item identifier="fpgacircuit" />
+      <Item identifier="tin" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="2">
+      <RequiredSkill identifier="electrical" level="40" />
+      <RequiredSkill identifier="medical" level="20" />
+      <RequiredItem identifier="fpgacircuit" />
+      <RequiredItem identifier="copper" />
+    </Fabricate>
+    <Price baseprice="40" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="1.25" minavailable="1" />
+      <Price locationtype="city" multiplier="1.25" minavailable="1" />
+      <Price locationtype="research" multiplier="0.6" minavailable="2" />
+      <Price locationtype="military" multiplier="1.0" sold="false" />
+      <Price locationtype="mine" multiplier="1.1" sold="false" />
+    </Price>
+    <InventoryIcon texture="%ModDir%/Items/signalcomp.png" sourcerect="0,0,28,28" origin="0.5,0.5" />
+    <Sprite texture="signalcomp.png" depth="0.8" sourcerect="0,0,28,28" origin="0.5,0.5" />
+    <Body radius="20" density="20" />
+    <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" PickingTime="5.0" aimpos="65,-10" handle1="0,0" attachable="true" aimable="true">
+      <RequiredItem items="wrench" type="Equipped" />
+      <StatusEffect type="Always" target="This" condition="60" />
+    </Holdable>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate">
+        <StatusEffect type="OnUse" target="This" condition="-200" />
+        <StatusEffect type="OnUse" target="This" condition="-200" CheckConditionalAlways="true">
+          <Conditional condition="gte 5" />
+          <sound file="%ModDir%/Items/Sano_neuro_stable.ogg" type="OnUse" range="300.0" loop="false" volume="1.0" />
+        </StatusEffect>
+      </input>
+      <input name="set_state" displayname="connection.setstate">
+        <StatusEffect type="OnUse" target="This" condition="-200" />
+        <StatusEffect type="OnUse" target="This" condition="-200" CheckConditionalAlways="true">
+          <Conditional condition="gte 5" />
+          <sound file="%ModDir%/Items/Sano_neuro_stable.ogg" type="OnUse" range="300.0" loop="false" volume="1.0" />
+        </StatusEffect>
+      </input>
+    </ConnectionPanel>
+  </Item>
+  <Item name="S/NowConscious" identifier="Sano_nowconscious" category="Electrical" Tags="smallitem,sound" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light" isshootable="true">
+    <PreferredContainer primary="reactorcab,storagecab" />
+    <PreferredContainer primary="wreckreactorcab,wreckstoragecab" minamount="0" maxamount="1" spawnprobability="0" />
+    <Deconstruct time="10">
+      <Item identifier="fpgacircuit" />
+      <Item identifier="tin" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="2">
+      <RequiredSkill identifier="electrical" level="40" />
+      <RequiredSkill identifier="medical" level="20" />
+      <RequiredItem identifier="fpgacircuit" />
+      <RequiredItem identifier="copper" />
+    </Fabricate>
+    <Price baseprice="40" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="1.25" minavailable="1" />
+      <Price locationtype="city" multiplier="1.25" minavailable="1" />
+      <Price locationtype="research" multiplier="0.6" minavailable="2" />
+      <Price locationtype="military" multiplier="1.0" sold="false" />
+      <Price locationtype="mine" multiplier="1.1" sold="false" />
+    </Price>
+    <InventoryIcon texture="%ModDir%/Items/signalcomp.png" sourcerect="0,0,28,28" origin="0.5,0.5" />
+    <Sprite texture="signalcomp.png" depth="0.8" sourcerect="0,0,28,28" origin="0.5,0.5" />
+    <Body radius="20" density="20" />
+    <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" PickingTime="5.0" aimpos="65,-10" handle1="0,0" attachable="true" aimable="true">
+      <RequiredItem items="wrench" type="Equipped" />
+      <StatusEffect type="Always" target="This" condition="60" />
+    </Holdable>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate">
+        <StatusEffect type="OnUse" target="This" condition="-200" />
+        <StatusEffect type="OnUse" target="This" condition="-200" CheckConditionalAlways="true">
+          <Conditional condition="gte 5" />
+          <sound file="%ModDir%/Items/Sano_nowconscious.ogg" type="OnUse" range="300.0" loop="false" volume="1.0" />
+        </StatusEffect>
+      </input>
+      <input name="set_state" displayname="connection.setstate">
+        <StatusEffect type="OnUse" target="This" condition="-200" />
+        <StatusEffect type="OnUse" target="This" condition="-200" CheckConditionalAlways="true">
+          <Conditional condition="gte 5" />
+          <sound file="%ModDir%/Items/Sano_nowconscious.ogg" type="OnUse" range="300.0" loop="false" volume="1.0" />
+        </StatusEffect>
+      </input>
+    </ConnectionPanel>
+  </Item>
+  <Item name="S/Online" identifier="Sano_online" category="Electrical" Tags="smallitem,sound" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light" isshootable="true">
+    <PreferredContainer primary="reactorcab,storagecab" />
+    <PreferredContainer primary="wreckreactorcab,wreckstoragecab" minamount="0" maxamount="1" spawnprobability="0" />
+    <Deconstruct time="10">
+      <Item identifier="fpgacircuit" />
+      <Item identifier="tin" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="2">
+      <RequiredSkill identifier="electrical" level="40" />
+      <RequiredSkill identifier="medical" level="20" />
+      <RequiredItem identifier="fpgacircuit" />
+      <RequiredItem identifier="copper" />
+    </Fabricate>
+    <Price baseprice="40" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="1.25" minavailable="1" />
+      <Price locationtype="city" multiplier="1.25" minavailable="1" />
+      <Price locationtype="research" multiplier="0.6" minavailable="2" />
+      <Price locationtype="military" multiplier="1.0" sold="false" />
+      <Price locationtype="mine" multiplier="1.1" sold="false" />
+    </Price>
+    <InventoryIcon texture="%ModDir%/Items/signalcomp.png" sourcerect="0,0,28,28" origin="0.5,0.5" />
+    <Sprite texture="signalcomp.png" depth="0.8" sourcerect="0,0,28,28" origin="0.5,0.5" />
+    <Body radius="20" density="20" />
+    <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" PickingTime="5.0" aimpos="65,-10" handle1="0,0" attachable="true" aimable="true">
+      <RequiredItem items="wrench" type="Equipped" />
+      <StatusEffect type="Always" target="This" condition="60" />
+    </Holdable>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate">
+        <StatusEffect type="OnUse" target="This" condition="-200" />
+        <StatusEffect type="OnUse" target="This" condition="-200" CheckConditionalAlways="true">
+          <Conditional condition="gte 5" />
+          <sound file="%ModDir%/Items/Sano_online.ogg" type="OnUse" range="300.0" loop="false" volume="1.0" />
+        </StatusEffect>
+      </input>
+      <input name="set_state" displayname="connection.setstate">
+        <StatusEffect type="OnUse" target="This" condition="-200" />
+        <StatusEffect type="OnUse" target="This" condition="-200" CheckConditionalAlways="true">
+          <Conditional condition="gte 5" />
+          <sound file="%ModDir%/Items/Sano_online.ogg" type="OnUse" range="300.0" loop="false" volume="1.0" />
+        </StatusEffect>
+      </input>
+    </ConnectionPanel>
+  </Item>
+  <Item name="S/OrganHigh" identifier="Sano_organ_high" category="Electrical" Tags="smallitem,sound" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light" isshootable="true">
+    <PreferredContainer primary="reactorcab,storagecab" />
+    <PreferredContainer primary="wreckreactorcab,wreckstoragecab" minamount="0" maxamount="1" spawnprobability="0" />
+    <Deconstruct time="10">
+      <Item identifier="fpgacircuit" />
+      <Item identifier="tin" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="2">
+      <RequiredSkill identifier="electrical" level="40" />
+      <RequiredSkill identifier="medical" level="20" />
+      <RequiredItem identifier="fpgacircuit" />
+      <RequiredItem identifier="copper" />
+    </Fabricate>
+    <Price baseprice="40" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="1.25" minavailable="1" />
+      <Price locationtype="city" multiplier="1.25" minavailable="1" />
+      <Price locationtype="research" multiplier="0.6" minavailable="2" />
+      <Price locationtype="military" multiplier="1.0" sold="false" />
+      <Price locationtype="mine" multiplier="1.1" sold="false" />
+    </Price>
+    <InventoryIcon texture="%ModDir%/Items/signalcomp.png" sourcerect="0,0,28,28" origin="0.5,0.5" />
+    <Sprite texture="signalcomp.png" depth="0.8" sourcerect="0,0,28,28" origin="0.5,0.5" />
+    <Body radius="20" density="20" />
+    <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" PickingTime="5.0" aimpos="65,-10" handle1="0,0" attachable="true" aimable="true">
+      <RequiredItem items="wrench" type="Equipped" />
+      <StatusEffect type="Always" target="This" condition="60" />
+    </Holdable>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate">
+        <StatusEffect type="OnUse" target="This" condition="-200" />
+        <StatusEffect type="OnUse" target="This" condition="-200" CheckConditionalAlways="true">
+          <Conditional condition="gte 5" />
+          <sound file="%ModDir%/Items/Sano_organ_high.ogg" type="OnUse" range="300.0" loop="false" volume="1.0" />
+        </StatusEffect>
+      </input>
+      <input name="set_state" displayname="connection.setstate">
+        <StatusEffect type="OnUse" target="This" condition="-200" />
+        <StatusEffect type="OnUse" target="This" condition="-200" CheckConditionalAlways="true">
+          <Conditional condition="gte 5" />
+          <sound file="%ModDir%/Items/Sano_organ_high.ogg" type="OnUse" range="300.0" loop="false" volume="1.0" />
+        </StatusEffect>
+      </input>
+    </ConnectionPanel>
+  </Item>
+  <Item name="S/OrganStable" identifier="Sano_organ_stable" category="Electrical" Tags="smallitem,sound" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light" isshootable="true">
+    <PreferredContainer primary="reactorcab,storagecab" />
+    <PreferredContainer primary="wreckreactorcab,wreckstoragecab" minamount="0" maxamount="1" spawnprobability="0" />
+    <Deconstruct time="10">
+      <Item identifier="fpgacircuit" />
+      <Item identifier="tin" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="2">
+      <RequiredSkill identifier="electrical" level="40" />
+      <RequiredSkill identifier="medical" level="20" />
+      <RequiredItem identifier="fpgacircuit" />
+      <RequiredItem identifier="copper" />
+    </Fabricate>
+    <Price baseprice="40" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="1.25" minavailable="1" />
+      <Price locationtype="city" multiplier="1.25" minavailable="1" />
+      <Price locationtype="research" multiplier="0.6" minavailable="2" />
+      <Price locationtype="military" multiplier="1.0" sold="false" />
+      <Price locationtype="mine" multiplier="1.1" sold="false" />
+    </Price>
+    <InventoryIcon texture="%ModDir%/Items/signalcomp.png" sourcerect="0,0,28,28" origin="0.5,0.5" />
+    <Sprite texture="signalcomp.png" depth="0.8" sourcerect="0,0,28,28" origin="0.5,0.5" />
+    <Body radius="20" density="20" />
+    <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" PickingTime="5.0" aimpos="65,-10" handle1="0,0" attachable="true" aimable="true">
+      <RequiredItem items="wrench" type="Equipped" />
+      <StatusEffect type="Always" target="This" condition="60" />
+    </Holdable>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate">
+        <StatusEffect type="OnUse" target="This" condition="-200" />
+        <StatusEffect type="OnUse" target="This" condition="-200" CheckConditionalAlways="true">
+          <Conditional condition="gte 5" />
+          <sound file="%ModDir%/Items/Sano_organ_stable.ogg" type="OnUse" range="300.0" loop="false" volume="1.0" />
+        </StatusEffect>
+      </input>
+      <input name="set_state" displayname="connection.setstate">
+        <StatusEffect type="OnUse" target="This" condition="-200" />
+        <StatusEffect type="OnUse" target="This" condition="-200" CheckConditionalAlways="true">
+          <Conditional condition="gte 5" />
+          <sound file="%ModDir%/Items/Sano_organ_stable.ogg" type="OnUse" range="300.0" loop="false" volume="1.0" />
+        </StatusEffect>
+      </input>
+    </ConnectionPanel>
+  </Item>
+  <Item name="S/OxygenHigh" identifier="Sano_oxygen_high" category="Electrical" Tags="smallitem,sound" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light" isshootable="true">
+    <PreferredContainer primary="reactorcab,storagecab" />
+    <PreferredContainer primary="wreckreactorcab,wreckstoragecab" minamount="0" maxamount="1" spawnprobability="0" />
+    <Deconstruct time="10">
+      <Item identifier="fpgacircuit" />
+      <Item identifier="tin" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="2">
+      <RequiredSkill identifier="electrical" level="40" />
+      <RequiredSkill identifier="medical" level="20" />
+      <RequiredItem identifier="fpgacircuit" />
+      <RequiredItem identifier="copper" />
+    </Fabricate>
+    <Price baseprice="40" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="1.25" minavailable="1" />
+      <Price locationtype="city" multiplier="1.25" minavailable="1" />
+      <Price locationtype="research" multiplier="0.6" minavailable="2" />
+      <Price locationtype="military" multiplier="1.0" sold="false" />
+      <Price locationtype="mine" multiplier="1.1" sold="false" />
+    </Price>
+    <InventoryIcon texture="%ModDir%/Items/signalcomp.png" sourcerect="0,0,28,28" origin="0.5,0.5" />
+    <Sprite texture="signalcomp.png" depth="0.8" sourcerect="0,0,28,28" origin="0.5,0.5" />
+    <Body radius="20" density="20" />
+    <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" PickingTime="5.0" aimpos="65,-10" handle1="0,0" attachable="true" aimable="true">
+      <RequiredItem items="wrench" type="Equipped" />
+      <StatusEffect type="Always" target="This" condition="60" />
+    </Holdable>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate">
+        <StatusEffect type="OnUse" target="This" condition="-200" />
+        <StatusEffect type="OnUse" target="This" condition="-200" CheckConditionalAlways="true">
+          <Conditional condition="gte 5" />
+          <sound file="%ModDir%/Items/Sano_oxygen_high.ogg" type="OnUse" range="300.0" loop="false" volume="1.0" />
+        </StatusEffect>
+      </input>
+      <input name="set_state" displayname="connection.setstate">
+        <StatusEffect type="OnUse" target="This" condition="-200" />
+        <StatusEffect type="OnUse" target="This" condition="-200" CheckConditionalAlways="true">
+          <Conditional condition="gte 5" />
+          <sound file="%ModDir%/Items/Sano_oxygen_high.ogg" type="OnUse" range="300.0" loop="false" volume="1.0" />
+        </StatusEffect>
+      </input>
+    </ConnectionPanel>
+  </Item>
+  <Item name="S/OxygenLow" identifier="Sano_oxygen_low" category="Electrical" Tags="smallitem,sound" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light" isshootable="true">
+    <PreferredContainer primary="reactorcab,storagecab" />
+    <PreferredContainer primary="wreckreactorcab,wreckstoragecab" minamount="0" maxamount="1" spawnprobability="0" />
+    <Deconstruct time="10">
+      <Item identifier="fpgacircuit" />
+      <Item identifier="tin" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="2">
+      <RequiredSkill identifier="electrical" level="40" />
+      <RequiredSkill identifier="medical" level="20" />
+      <RequiredItem identifier="fpgacircuit" />
+      <RequiredItem identifier="copper" />
+    </Fabricate>
+    <Price baseprice="40" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="1.25" minavailable="1" />
+      <Price locationtype="city" multiplier="1.25" minavailable="1" />
+      <Price locationtype="research" multiplier="0.6" minavailable="2" />
+      <Price locationtype="military" multiplier="1.0" sold="false" />
+      <Price locationtype="mine" multiplier="1.1" sold="false" />
+    </Price>
+    <InventoryIcon texture="%ModDir%/Items/signalcomp.png" sourcerect="0,0,28,28" origin="0.5,0.5" />
+    <Sprite texture="signalcomp.png" depth="0.8" sourcerect="0,0,28,28" origin="0.5,0.5" />
+    <Body radius="20" density="20" />
+    <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" PickingTime="5.0" aimpos="65,-10" handle1="0,0" attachable="true" aimable="true">
+      <RequiredItem items="wrench" type="Equipped" />
+      <StatusEffect type="Always" target="This" condition="60" />
+    </Holdable>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate">
+        <StatusEffect type="OnUse" target="This" condition="-200" />
+        <StatusEffect type="OnUse" target="This" condition="-200" CheckConditionalAlways="true">
+          <Conditional condition="gte 5" />
+          <sound file="%ModDir%/Items/Sano_oxygen_low.ogg" type="OnUse" range="300.0" loop="false" volume="1.0" />
+        </StatusEffect>
+      </input>
+      <input name="set_state" displayname="connection.setstate">
+        <StatusEffect type="OnUse" target="This" condition="-200" />
+        <StatusEffect type="OnUse" target="This" condition="-200" CheckConditionalAlways="true">
+          <Conditional condition="gte 5" />
+          <sound file="%ModDir%/Items/Sano_oxygen_low.ogg" type="OnUse" range="300.0" loop="false" volume="1.0" />
+        </StatusEffect>
+      </input>
+    </ConnectionPanel>
+  </Item>
+  <Item name="S/OxygenStable" identifier="Sano_oxygen_stable" category="Electrical" Tags="smallitem,sound" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light" isshootable="true">
+    <PreferredContainer primary="reactorcab,storagecab" />
+    <PreferredContainer primary="wreckreactorcab,wreckstoragecab" minamount="0" maxamount="1" spawnprobability="0" />
+    <Deconstruct time="10">
+      <Item identifier="fpgacircuit" />
+      <Item identifier="tin" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="2">
+      <RequiredSkill identifier="electrical" level="40" />
+      <RequiredSkill identifier="medical" level="20" />
+      <RequiredItem identifier="fpgacircuit" />
+      <RequiredItem identifier="copper" />
+    </Fabricate>
+    <Price baseprice="40" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="1.25" minavailable="1" />
+      <Price locationtype="city" multiplier="1.25" minavailable="1" />
+      <Price locationtype="research" multiplier="0.6" minavailable="2" />
+      <Price locationtype="military" multiplier="1.0" sold="false" />
+      <Price locationtype="mine" multiplier="1.1" sold="false" />
+    </Price>
+    <InventoryIcon texture="%ModDir%/Items/signalcomp.png" sourcerect="0,0,28,28" origin="0.5,0.5" />
+    <Sprite texture="signalcomp.png" depth="0.8" sourcerect="0,0,28,28" origin="0.5,0.5" />
+    <Body radius="20" density="20" />
+    <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" PickingTime="5.0" aimpos="65,-10" handle1="0,0" attachable="true" aimable="true">
+      <RequiredItem items="wrench" type="Equipped" />
+      <StatusEffect type="Always" target="This" condition="60" />
+    </Holdable>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate">
+        <StatusEffect type="OnUse" target="This" condition="-200" />
+        <StatusEffect type="OnUse" target="This" condition="-200" CheckConditionalAlways="true">
+          <Conditional condition="gte 5" />
+          <sound file="%ModDir%/Items/Sano_oxygen_stable.ogg" type="OnUse" range="300.0" loop="false" volume="1.0" />
+        </StatusEffect>
+      </input>
+      <input name="set_state" displayname="connection.setstate">
+        <StatusEffect type="OnUse" target="This" condition="-200" />
+        <StatusEffect type="OnUse" target="This" condition="-200" CheckConditionalAlways="true">
+          <Conditional condition="gte 5" />
+          <sound file="%ModDir%/Items/Sano_oxygen_stable.ogg" type="OnUse" range="300.0" loop="false" volume="1.0" />
+        </StatusEffect>
+      </input>
+    </ConnectionPanel>
+  </Item>
+  <Item name="S/PressureHigh" identifier="Sano_pressure_high" category="Electrical" Tags="smallitem,sound" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light" isshootable="true">
+    <PreferredContainer primary="reactorcab,storagecab" />
+    <PreferredContainer primary="wreckreactorcab,wreckstoragecab" minamount="0" maxamount="1" spawnprobability="0" />
+    <Deconstruct time="10">
+      <Item identifier="fpgacircuit" />
+      <Item identifier="tin" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="2">
+      <RequiredSkill identifier="electrical" level="40" />
+      <RequiredSkill identifier="medical" level="20" />
+      <RequiredItem identifier="fpgacircuit" />
+      <RequiredItem identifier="copper" />
+    </Fabricate>
+    <Price baseprice="40" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="1.25" minavailable="1" />
+      <Price locationtype="city" multiplier="1.25" minavailable="1" />
+      <Price locationtype="research" multiplier="0.6" minavailable="2" />
+      <Price locationtype="military" multiplier="1.0" sold="false" />
+      <Price locationtype="mine" multiplier="1.1" sold="false" />
+    </Price>
+    <InventoryIcon texture="%ModDir%/Items/signalcomp.png" sourcerect="0,0,28,28" origin="0.5,0.5" />
+    <Sprite texture="signalcomp.png" depth="0.8" sourcerect="0,0,28,28" origin="0.5,0.5" />
+    <Body radius="20" density="20" />
+    <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" PickingTime="5.0" aimpos="65,-10" handle1="0,0" attachable="true" aimable="true">
+      <RequiredItem items="wrench" type="Equipped" />
+      <StatusEffect type="Always" target="This" condition="60" />
+    </Holdable>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate">
+        <StatusEffect type="OnUse" target="This" condition="-200" />
+        <StatusEffect type="OnUse" target="This" condition="-200" CheckConditionalAlways="true">
+          <Conditional condition="gte 5" />
+          <sound file="%ModDir%/Items/Sano_pressure_high.ogg" type="OnUse" range="300.0" loop="false" volume="1.0" />
+        </StatusEffect>
+      </input>
+      <input name="set_state" displayname="connection.setstate">
+        <StatusEffect type="OnUse" target="This" condition="-200" />
+        <StatusEffect type="OnUse" target="This" condition="-200" CheckConditionalAlways="true">
+          <Conditional condition="gte 5" />
+          <sound file="%ModDir%/Items/Sano_pressure_high.ogg" type="OnUse" range="300.0" loop="false" volume="1.0" />
+        </StatusEffect>
+      </input>
+    </ConnectionPanel>
+  </Item>
+  <Item name="S/PressureLow" identifier="Sano_pressure_low" category="Electrical" Tags="smallitem,sound" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light" isshootable="true">
+    <PreferredContainer primary="reactorcab,storagecab" />
+    <PreferredContainer primary="wreckreactorcab,wreckstoragecab" minamount="0" maxamount="1" spawnprobability="0" />
+    <Deconstruct time="10">
+      <Item identifier="fpgacircuit" />
+      <Item identifier="tin" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="2">
+      <RequiredSkill identifier="electrical" level="40" />
+      <RequiredSkill identifier="medical" level="20" />
+      <RequiredItem identifier="fpgacircuit" />
+      <RequiredItem identifier="copper" />
+    </Fabricate>
+    <Price baseprice="40" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="1.25" minavailable="1" />
+      <Price locationtype="city" multiplier="1.25" minavailable="1" />
+      <Price locationtype="research" multiplier="0.6" minavailable="2" />
+      <Price locationtype="military" multiplier="1.0" sold="false" />
+      <Price locationtype="mine" multiplier="1.1" sold="false" />
+    </Price>
+    <InventoryIcon texture="%ModDir%/Items/signalcomp.png" sourcerect="0,0,28,28" origin="0.5,0.5" />
+    <Sprite texture="signalcomp.png" depth="0.8" sourcerect="0,0,28,28" origin="0.5,0.5" />
+    <Body radius="20" density="20" />
+    <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" PickingTime="5.0" aimpos="65,-10" handle1="0,0" attachable="true" aimable="true">
+      <RequiredItem items="wrench" type="Equipped" />
+      <StatusEffect type="Always" target="This" condition="60" />
+    </Holdable>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate">
+        <StatusEffect type="OnUse" target="This" condition="-200" />
+        <StatusEffect type="OnUse" target="This" condition="-200" CheckConditionalAlways="true">
+          <Conditional condition="gte 5" />
+          <sound file="%ModDir%/Items/Sano_pressure_low.ogg" type="OnUse" range="300.0" loop="false" volume="1.0" />
+        </StatusEffect>
+      </input>
+      <input name="set_state" displayname="connection.setstate">
+        <StatusEffect type="OnUse" target="This" condition="-200" />
+        <StatusEffect type="OnUse" target="This" condition="-200" CheckConditionalAlways="true">
+          <Conditional condition="gte 5" />
+          <sound file="%ModDir%/Items/Sano_pressure_low.ogg" type="OnUse" range="300.0" loop="false" volume="1.0" />
+        </StatusEffect>
+      </input>
+    </ConnectionPanel>
+  </Item>
+  <Item name="S/SurgeryEnded" identifier="Sano_surgeryended" category="Electrical" Tags="smallitem,sound" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light" isshootable="true">
+    <PreferredContainer primary="reactorcab,storagecab" />
+    <PreferredContainer primary="wreckreactorcab,wreckstoragecab" minamount="0" maxamount="1" spawnprobability="0" />
+    <Deconstruct time="10">
+      <Item identifier="fpgacircuit" />
+      <Item identifier="tin" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="2">
+      <RequiredSkill identifier="electrical" level="40" />
+      <RequiredSkill identifier="medical" level="20" />
+      <RequiredItem identifier="fpgacircuit" />
+      <RequiredItem identifier="copper" />
+    </Fabricate>
+    <Price baseprice="40" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="1.25" minavailable="1" />
+      <Price locationtype="city" multiplier="1.25" minavailable="1" />
+      <Price locationtype="research" multiplier="0.6" minavailable="2" />
+      <Price locationtype="military" multiplier="1.0" sold="false" />
+      <Price locationtype="mine" multiplier="1.1" sold="false" />
+    </Price>
+    <InventoryIcon texture="%ModDir%/Items/signalcomp.png" sourcerect="0,0,28,28" origin="0.5,0.5" />
+    <Sprite texture="signalcomp.png" depth="0.8" sourcerect="0,0,28,28" origin="0.5,0.5" />
+    <Body radius="20" density="20" />
+    <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" PickingTime="5.0" aimpos="65,-10" handle1="0,0" attachable="true" aimable="true">
+      <RequiredItem items="wrench" type="Equipped" />
+      <StatusEffect type="Always" target="This" condition="60" />
+    </Holdable>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate">
+        <StatusEffect type="OnUse" target="This" condition="-200" />
+        <StatusEffect type="OnUse" target="This" condition="-200" CheckConditionalAlways="true">
+          <Conditional condition="gte 5" />
+          <sound file="%ModDir%/Items/Sano_surgeryended.ogg" type="OnUse" range="300.0" loop="false" volume="1.0" />
+        </StatusEffect>
+      </input>
+      <input name="set_state" displayname="connection.setstate">
+        <StatusEffect type="OnUse" target="This" condition="-200" />
+        <StatusEffect type="OnUse" target="This" condition="-200" CheckConditionalAlways="true">
+          <Conditional condition="gte 5" />
+          <sound file="%ModDir%/Items/Sano_surgeryended.ogg" type="OnUse" range="300.0" loop="false" volume="1.0" />
+        </StatusEffect>
+      </input>
+    </ConnectionPanel>
+  </Item>
+  <Item name="S/SurgeryStart" identifier="Sano_surgerystart" category="Electrical" Tags="smallitem,sound" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light" isshootable="true">
+    <PreferredContainer primary="reactorcab,storagecab" />
+    <PreferredContainer primary="wreckreactorcab,wreckstoragecab" minamount="0" maxamount="1" spawnprobability="0" />
+    <Deconstruct time="10">
+      <Item identifier="fpgacircuit" />
+      <Item identifier="tin" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="2">
+      <RequiredSkill identifier="electrical" level="40" />
+      <RequiredSkill identifier="medical" level="20" />
+      <RequiredItem identifier="fpgacircuit" />
+      <RequiredItem identifier="copper" />
+    </Fabricate>
+    <Price baseprice="40" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="1.25" minavailable="1" />
+      <Price locationtype="city" multiplier="1.25" minavailable="1" />
+      <Price locationtype="research" multiplier="0.6" minavailable="2" />
+      <Price locationtype="military" multiplier="1.0" sold="false" />
+      <Price locationtype="mine" multiplier="1.1" sold="false" />
+    </Price>
+    <InventoryIcon texture="%ModDir%/Items/signalcomp.png" sourcerect="0,0,28,28" origin="0.5,0.5" />
+    <Sprite texture="signalcomp.png" depth="0.8" sourcerect="0,0,28,28" origin="0.5,0.5" />
+    <Body radius="20" density="20" />
+    <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" PickingTime="5.0" aimpos="65,-10" handle1="0,0" attachable="true" aimable="true">
+      <RequiredItem items="wrench" type="Equipped" />
+      <StatusEffect type="Always" target="This" condition="60" />
+    </Holdable>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate">
+        <StatusEffect type="OnUse" target="This" condition="-200" />
+        <StatusEffect type="OnUse" target="This" condition="-200" CheckConditionalAlways="true">
+          <Conditional condition="gte 5" />
+          <sound file="%ModDir%/Items/Sano_surgerystart.ogg" type="OnUse" range="300.0" loop="false" volume="1.0" />
+        </StatusEffect>
+      </input>
+      <input name="set_state" displayname="connection.setstate">
+        <StatusEffect type="OnUse" target="This" condition="-200" />
+        <StatusEffect type="OnUse" target="This" condition="-200" CheckConditionalAlways="true">
+          <Conditional condition="gte 5" />
+          <sound file="%ModDir%/Items/Sano_surgerystart.ogg" type="OnUse" range="300.0" loop="false" volume="1.0" />
+        </StatusEffect>
+      </input>
+    </ConnectionPanel>
+  </Item>
+  <Item name="S/Unconscious" identifier="Sano_unconscious" category="Electrical" Tags="smallitem,sound" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light" isshootable="true">
+    <PreferredContainer primary="reactorcab,storagecab" />
+    <PreferredContainer primary="wreckreactorcab,wreckstoragecab" minamount="0" maxamount="1" spawnprobability="0" />
+    <Deconstruct time="10">
+      <Item identifier="fpgacircuit" />
+      <Item identifier="tin" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="2">
+      <RequiredSkill identifier="electrical" level="40" />
+      <RequiredSkill identifier="medical" level="20" />
+      <RequiredItem identifier="fpgacircuit" />
+      <RequiredItem identifier="copper" />
+    </Fabricate>
+    <Price baseprice="40" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="1.25" minavailable="1" />
+      <Price locationtype="city" multiplier="1.25" minavailable="1" />
+      <Price locationtype="research" multiplier="0.6" minavailable="2" />
+      <Price locationtype="military" multiplier="1.0" sold="false" />
+      <Price locationtype="mine" multiplier="1.1" sold="false" />
+    </Price>
+    <InventoryIcon texture="%ModDir%/Items/signalcomp.png" sourcerect="0,0,28,28" origin="0.5,0.5" />
+    <Sprite texture="signalcomp.png" depth="0.8" sourcerect="0,0,28,28" origin="0.5,0.5" />
+    <Body radius="20" density="20" />
+    <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" PickingTime="5.0" aimpos="65,-10" handle1="0,0" attachable="true" aimable="true">
+      <RequiredItem items="wrench" type="Equipped" />
+      <StatusEffect type="Always" target="This" condition="60" />
+    </Holdable>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate">
+        <StatusEffect type="OnUse" target="This" condition="-200" />
+        <StatusEffect type="OnUse" target="This" condition="-200" CheckConditionalAlways="true">
+          <Conditional condition="gte 5" />
+          <sound file="%ModDir%/Items/Sano_unconscious.ogg" type="OnUse" range="300.0" loop="false" volume="1.0" />
+        </StatusEffect>
+      </input>
+      <input name="set_state" displayname="connection.setstate">
+        <StatusEffect type="OnUse" target="This" condition="-200" />
+        <StatusEffect type="OnUse" target="This" condition="-200" CheckConditionalAlways="true">
+          <Conditional condition="gte 5" />
+          <sound file="%ModDir%/Items/Sano_unconscious.ogg" type="OnUse" range="300.0" loop="false" volume="1.0" />
+        </StatusEffect>
+      </input>
+    </ConnectionPanel>
+  </Item>
+  <Item name="S/VitalityHigh" identifier="Sano_vitality_high" category="Electrical" Tags="smallitem,sound" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light" isshootable="true">
+    <PreferredContainer primary="reactorcab,storagecab" />
+    <PreferredContainer primary="wreckreactorcab,wreckstoragecab" minamount="0" maxamount="1" spawnprobability="0" />
+    <Deconstruct time="10">
+      <Item identifier="fpgacircuit" />
+      <Item identifier="tin" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="2">
+      <RequiredSkill identifier="electrical" level="40" />
+      <RequiredSkill identifier="medical" level="20" />
+      <RequiredItem identifier="fpgacircuit" />
+      <RequiredItem identifier="copper" />
+    </Fabricate>
+    <Price baseprice="40" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="1.25" minavailable="1" />
+      <Price locationtype="city" multiplier="1.25" minavailable="1" />
+      <Price locationtype="research" multiplier="0.6" minavailable="2" />
+      <Price locationtype="military" multiplier="1.0" sold="false" />
+      <Price locationtype="mine" multiplier="1.1" sold="false" />
+    </Price>
+    <InventoryIcon texture="%ModDir%/Items/signalcomp.png" sourcerect="0,0,28,28" origin="0.5,0.5" />
+    <Sprite texture="signalcomp.png" depth="0.8" sourcerect="0,0,28,28" origin="0.5,0.5" />
+    <Body radius="20" density="20" />
+    <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" PickingTime="5.0" aimpos="65,-10" handle1="0,0" attachable="true" aimable="true">
+      <RequiredItem items="wrench" type="Equipped" />
+      <StatusEffect type="Always" target="This" condition="60" />
+    </Holdable>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate">
+        <StatusEffect type="OnUse" target="This" condition="-200" />
+        <StatusEffect type="OnUse" target="This" condition="-200" CheckConditionalAlways="true">
+          <Conditional condition="gte 5" />
+          <sound file="%ModDir%/Items/Sano_vitality_high.ogg" type="OnUse" range="300.0" loop="false" volume="1.0" />
+        </StatusEffect>
+      </input>
+      <input name="set_state" displayname="connection.setstate">
+        <StatusEffect type="OnUse" target="This" condition="-200" />
+        <StatusEffect type="OnUse" target="This" condition="-200" CheckConditionalAlways="true">
+          <Conditional condition="gte 5" />
+          <sound file="%ModDir%/Items/Sano_vitality_high.ogg" type="OnUse" range="300.0" loop="false" volume="1.0" />
+        </StatusEffect>
+      </input>
+    </ConnectionPanel>
+  </Item>
+  <Item name="S/VitalityLow" identifier="Sano_vitality_low" category="Electrical" Tags="smallitem,sound" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light" isshootable="true">
+    <PreferredContainer primary="reactorcab,storagecab" />
+    <PreferredContainer primary="wreckreactorcab,wreckstoragecab" minamount="0" maxamount="1" spawnprobability="0" />
+    <Deconstruct time="10">
+      <Item identifier="fpgacircuit" />
+      <Item identifier="tin" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="2">
+      <RequiredSkill identifier="electrical" level="40" />
+      <RequiredSkill identifier="medical" level="20" />
+      <RequiredItem identifier="fpgacircuit" />
+      <RequiredItem identifier="copper" />
+    </Fabricate>
+    <Price baseprice="40" soldeverywhere="false">
+      <Price locationtype="outpost" multiplier="1.25" minavailable="1" />
+      <Price locationtype="city" multiplier="1.25" minavailable="1" />
+      <Price locationtype="research" multiplier="0.6" minavailable="2" />
+      <Price locationtype="military" multiplier="1.0" sold="false" />
+      <Price locationtype="mine" multiplier="1.1" sold="false" />
+    </Price>
+    <InventoryIcon texture="%ModDir%/Items/signalcomp.png" sourcerect="0,0,28,28" origin="0.5,0.5" />
+    <Sprite texture="signalcomp.png" depth="0.8" sourcerect="0,0,28,28" origin="0.5,0.5" />
+    <Body radius="20" density="20" />
+    <Holdable selectkey="Select" pickkey="Use" slots="Any,RightHand,LeftHand" msg="ItemMsgDetachWrench" PickingTime="5.0" aimpos="65,-10" handle1="0,0" attachable="true" aimable="true">
+      <RequiredItem items="wrench" type="Equipped" />
+      <StatusEffect type="Always" target="This" condition="60" />
+    </Holdable>
+    <ConnectionPanel selectkey="Action" canbeselected="true" msg="ItemMsgRewireScrewdriver" hudpriority="10">
+      <GuiFrame relativesize="0.2,0.32" minsize="400,350" maxsize="480,420" anchor="Center" style="ConnectionPanel" />
+      <RequiredItem items="screwdriver" type="Equipped" />
+      <input name="toggle" displayname="connection.togglestate">
+        <StatusEffect type="OnUse" target="This" condition="-200" />
+        <StatusEffect type="OnUse" target="This" condition="-200" CheckConditionalAlways="true">
+          <Conditional condition="gte 5" />
+          <sound file="%ModDir%/Items/Sano_vitality_low.ogg" type="OnUse" range="300.0" loop="false" volume="1.0" />
+        </StatusEffect>
+      </input>
+      <input name="set_state" displayname="connection.setstate">
+        <StatusEffect type="OnUse" target="This" condition="-200" />
+        <StatusEffect type="OnUse" target="This" condition="-200" CheckConditionalAlways="true">
+          <Conditional condition="gte 5" />
+          <sound file="%ModDir%/Items/Sano_vitality_low.ogg" type="OnUse" range="300.0" loop="false" volume="1.0" />
+        </StatusEffect>
+      </input>
+    </ConnectionPanel>
+  </Item>
+</Items>
