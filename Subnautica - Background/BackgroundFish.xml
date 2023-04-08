@@ -3,125 +3,125 @@
 
   <!-- Caverns -->
 
-  <BladderFish speed="100.0" wanderamount="3.0" wanderzamount="0.3" swarmmin="1" swarmmax="1" swarmradius="1" scale="0.25" commonness="4">
+  <BladderFish speed="100.0" wanderamount="3.0" wanderzamount="0.3" swarmmin="2" swarmmax="5" swarmradius="900" scale="0.4" commonness="8">
     <overridecommonness leveltype="wastesbasic" commonness="0" />
     <overridecommonness leveltype="greatseabasic" commonness="0" />
     <Sprite texture="%ModDir%/SubnauticaFishSheet.png" sourcerect="0,0,105,89" origin="0.5,0.5" />
   </BladderFish>
 
-  <Boomerang speed="300.0" wanderamount="3.0" wanderzamount="0.3" swarmmin="1" swarmmax="5" swarmradius="300" scale="0.25" commonness="0">
-    <overridecommonness leveltype="coldcavernsbasic" commonness="6" />
-    <overridecommonness leveltype="coldcavernsadvanced" commonness="6" />
-    <overridecommonness leveltype="coldcavernsmaze" commonness="6" />
-    <overridecommonness leveltype="coldcavernstransition" commonness="6" />
+  <Boomerang speed="300.0" wanderamount="3.0" wanderzamount="0.3" swarmmin="5" swarmmax="9" swarmradius="300" scale="0.4" commonness="0">
+    <overridecommonness leveltype="coldcavernsbasic" commonness="9" />
+    <overridecommonness leveltype="coldcavernsadvanced" commonness="9" />
+    <overridecommonness leveltype="coldcavernsmaze" commonness="9" />
+    <overridecommonness leveltype="coldcavernstransition" commonness="9" />
     <Sprite texture="%ModDir%/SubnauticaFishSheet.png" sourcerect="106,-1,92,88" origin="0.5,0.5" />
     <LightSprite texture="%ModDir%/SubnauticaFishLightsSheet.png" sourcerect="106,-1,92,88" origin="0.5,0.5"/>
   </Boomerang>
 
-  <IcePeeper speed="40.0" wanderamount="3.0" wanderzamount="0.3" swarmmin="3" swarmmax="6" swarmradius="900" scale="0.25" commonness="0">
-    <overridecommonness leveltype="coldcavernsbasic" commonness="15" />
-    <overridecommonness leveltype="coldcavernsadvanced" commonness="15" />
-    <overridecommonness leveltype="coldcavernsmaze" commonness="15" />
-    <overridecommonness leveltype="coldcavernstransition" commonness="15" />
+  <IcePeeper speed="250.0" wanderamount="3.0" wanderzamount="0.3" swarmmin="6" swarmmax="15" swarmradius="1400" scale="0.4" commonness="0">
+    <overridecommonness leveltype="coldcavernsbasic" commonness="18" />
+    <overridecommonness leveltype="coldcavernsadvanced" commonness="18" />
+    <overridecommonness leveltype="coldcavernsmaze" commonness="18" />
+    <overridecommonness leveltype="coldcavernstransition" commonness="18" />
     <Sprite texture="%ModDir%/SubnauticaFishSheet.png" sourcerect="193,13,93,68" origin="0.5,0.5" />
     <LightSprite texture="%ModDir%/SubnauticaFishLightsSheet.png" sourcerect="193,13,93,68" origin="0.5,0.5"/>
   </IcePeeper>
 
   <!-- Ridge -->
 
-  <GoldenFish speed="100.0" wanderamount="3.0" wanderzamount="0.3" swarmmin="1" swarmmax="3" swarmradius="500" scale="0.25" commonness="0">
+  <GoldenFish speed="100.0" wanderamount="3.0" wanderzamount="0.3" swarmmin="2" swarmmax="6" swarmradius="500" scale="0.4" commonness="0">
     <overridecommonness leveltype="ridgebasic" commonness="5" />
     <overridecommonness leveltype="ridgeadvanced" commonness="5" />
     <Sprite texture="%ModDir%/SubnauticaFishSheet.png" sourcerect="-2,94,96,86" origin="0.5,0.5" />
   </GoldenFish>
 
-  <BlueFeather speed="100.0" wanderamount="3.0" wanderzamount="0.3" swarmmin="1" swarmmax="3" swarmradius="300" scale="0.25" commonness="0">
+  <BlueFeather speed="150.0" wanderamount="3.0" wanderzamount="0.3" swarmmin="1" swarmmax="3" swarmradius="300" scale="0.4" commonness="0">
     <overridecommonness leveltype="ridgebasic" commonness="10" />
     <overridecommonness leveltype="ridgeadvanced" commonness="10" />
     <Sprite texture="%ModDir%/SubnauticaFishSheet.png" sourcerect="94,97,111,78" origin="0.5,0.5" />
   </BlueFeather>
 
-  <RedFeather speed="100.0" wanderamount="3.0" wanderzamount="0.3" swarmmin="1" swarmmax="3" swarmradius="300" scale="0.25" commonness="0">
+  <RedFeather speed="150.0" wanderamount="3.0" wanderzamount="0.3" swarmmin="1" swarmmax="3" swarmradius="300" scale="0.4" commonness="0">
     <overridecommonness leveltype="ridgebasic" commonness="10" />
     <overridecommonness leveltype="ridgeadvanced" commonness="10" />
     <Sprite texture="%ModDir%/SubnauticaFishSheet.png" sourcerect="204,98,99,76" origin="0.5,0.5" />
   </RedFeather>
 
-  <HoopFish speed="200.0" wanderamount="3.0" wanderzamount="0.3" swarmmin="1" swarmmax="5" swarmradius="500" scale="0.25" commonness="0">
-    <overridecommonness leveltype="ridgebasic" commonness="6" />
-    <overridecommonness leveltype="ridgeadvanced" commonness="6" />
+  <HoopFish speed="275.0" wanderamount="3.0" wanderzamount="0.3" swarmmin="1" swarmmax="5" swarmradius="500" scale="0.4" commonness="0">
+    <overridecommonness leveltype="ridgebasic" commonness="12" />
+    <overridecommonness leveltype="ridgeadvanced" commonness="12" />
     <Sprite texture="%ModDir%/SubnauticaFishSheet.png" sourcerect="366,103,110,79" origin="0.5,0.5" />
     <LightSprite texture="%ModDir%/SubnauticaFishLightsSheet.png" sourcerect="366,103,110,79" origin="0.5,0.5"/>
   </HoopFish>
 
-  <HoverFish speed="230.0" wanderamount="3.0" wanderzamount="0.3" swarmmin="1" swarmmax="1" swarmradius="1" scale="0.25" commonness="0">
-    <overridecommonness leveltype="ridgebasic" commonness="10" />
-    <overridecommonness leveltype="ridgeadvanced" commonness="10" />
+  <HoverFish speed="235.0" wanderamount="3.0" wanderzamount="0.3" swarmmin="6" swarmmax="12" swarmradius="1400" scale="0.4" commonness="0">
+    <overridecommonness leveltype="ridgebasic" commonness="20" />
+    <overridecommonness leveltype="ridgeadvanced" commonness="20" />
     <Sprite texture="%ModDir%/SubnauticaFishSheet.png" sourcerect="494,100,101,74" origin="0.5,0.5" />
     <LightSprite texture="%ModDir%/SubnauticaFishLightsSheet.png" sourcerect="494,100,101,74" origin="0.5,0.5"/>
   </HoverFish>
 
     <!-- Plateau -->
 
-  <GaryFish speed="100.0" wanderamount="3.0" wanderzamount="0.3" swarmmin="1" swarmmax="1" swarmradius="1" scale="0.25" commonness="0">
+  <GaryFish speed="100.0" wanderamount="3.0" wanderzamount="0.3" swarmmin="1" swarmmax="1" swarmradius="1" scale="0.4" commonness="0">
     <overridecommonness leveltype="plateaubasic" commonness="3" />
     <Sprite texture="%ModDir%/SubnauticaFishSheet.png" sourcerect="1,179,113,74" origin="0.5,0.5" />
   </GaryFish>
 
-  <Peeper speed="300.0" wanderamount="3.0" wanderzamount="0.3" swarmmin="3" swarmmax="6" swarmradius="900" scale="0.25" commonness="0">
-    <overridecommonness leveltype="plateaubasic" commonness="10" />
-    <overridecommonness leveltype="ridgebasic" commonness="10" />
-    <overridecommonness leveltype="ridgeadvanced" commonness="10" />
+  <Peeper speed="300.0" wanderamount="3.0" wanderzamount="0.3" swarmmin="3" swarmmax="6" swarmradius="900" scale="0.4" commonness="0">
+    <overridecommonness leveltype="plateaubasic" commonness="14" />
+    <overridecommonness leveltype="ridgebasic" commonness="14" />
+    <overridecommonness leveltype="ridgeadvanced" commonness="14" />
     <Sprite texture="%ModDir%/SubnauticaFishSheet.png" sourcerect="114,177,104,91" origin="0.5,0.5" />
     <LightSprite texture="%ModDir%/SubnauticaFishLightsSheet.png" sourcerect="114,177,104,91" origin="0.5,0.5"/>
   </Peeper>
 
-  <HoleFish speed="150.0" wanderamount="3.0" wanderzamount="0.3" swarmmin="1" swarmmax="1" swarmradius="1" scale="0.25" commonness="0">
-    <overridecommonness leveltype="plateaubasic" commonness="6" />
-    <overridecommonness leveltype="ridgebasic" commonness="6" />
-    <overridecommonness leveltype="ridgeadvanced" commonness="6" />
+  <HoleFish speed="150.0" wanderamount="3.0" wanderzamount="0.3" swarmmin="1" swarmmax="4" swarmradius="400" scale="0.4" commonness="0">
+    <overridecommonness leveltype="plateaubasic" commonness="8" />
+    <overridecommonness leveltype="ridgebasic" commonness="8" />
+    <overridecommonness leveltype="ridgeadvanced" commonness="8" />
     <Sprite texture="%ModDir%/SubnauticaFishSheet.png" sourcerect="227,182,109,81" origin="0.5,0.5" />
   </HoleFish>
 
       <!-- Sea -->
 
-  <SpadeFish speed="40.0" wanderamount="3.0" wanderzamount="0.3" swarmmin="1" swarmmax="1" swarmradius="1" scale="0.25" commonness="0">
-    <overridecommonness leveltype="greatseabasic" commonness="3" />
+  <SpadeFish speed="40.0" wanderamount="3.0" wanderzamount="0.3" swarmmin="1" swarmmax="1" swarmradius="1" scale="0.4" commonness="0">
+    <overridecommonness leveltype="greatseabasic" commonness="6" />
     <Sprite texture="%ModDir%/SubnauticaFishSheet.png" sourcerect="-1,285,97,71" origin="0.5,0.5" />
   </SpadeFish>
 
-  <Reginald speed="70.0" wanderamount="3.0" wanderzamount="0.3" swarmmin="1" swarmmax="1" swarmradius="1" scale="0.25" commonness="0">
-    <overridecommonness leveltype="greatseabasic" commonness="4" />
+  <Reginald speed="70.0" wanderamount="3.0" wanderzamount="0.3" swarmmin="3" swarmmax="6" swarmradius="400" scale="0.4" commonness="0">
+    <overridecommonness leveltype="greatseabasic" commonness="12" />
     <Sprite texture="%ModDir%/SubnauticaFishSheet.png" sourcerect="95,276,58,89" origin="0.5,0.5" />
     <LightSprite texture="%ModDir%/SubnauticaFishLightsSheet.png" sourcerect="95,276,58,89" origin="0.5,0.5"/>
   </Reginald>
 
-  <Oculus speed="270.0" wanderamount="3.0" wanderzamount="0.3" swarmmin="1" swarmmax="1" swarmradius="3" scale="0.25" commonness="0">
-    <overridecommonness leveltype="greatseabasic" commonness="7" />
+  <Oculus speed="350.0" wanderamount="3.0" wanderzamount="0.3" swarmmin="2" swarmmax="4" swarmradius="900" scale="0.4" commonness="0">
+    <overridecommonness leveltype="greatseabasic" commonness="32" />
     <Sprite texture="%ModDir%/SubnauticaFishSheet.png" sourcerect="156,268,124,95" origin="0.5,0.5" />
     <LightSprite texture="%ModDir%/SubnauticaFishLightsSheet.png" sourcerect="156,268,124,95" origin="0.5,0.5"/>
   </Oculus>
 
-  <Eyeye speed="90.0" wanderamount="3.0" wanderzamount="0.3" swarmmin="1" swarmmax="3" swarmradius="300" scale="0.25" commonness="0">
+  <Eyeye speed="90.0" wanderamount="3.0" wanderzamount="0.3" swarmmin="2" swarmmax="4" swarmradius="300" scale="0.4" commonness="0">
     <overridecommonness leveltype="greatseabasic" commonness="7" />
     <Sprite texture="%ModDir%/SubnauticaFishSheet.png" sourcerect="285,273,86,92" origin="0.5,0.5" />
   </Eyeye>
 
   <!-- Wastes -->
 
-  <RedEyeye speed="90.0" wanderamount="3.0" wanderzamount="0.3" swarmmin="1" swarmmax="3" swarmradius="900" scale="0.25" commonness="0">
+  <RedEyeye speed="90.0" wanderamount="3.0" wanderzamount="0.3" swarmmin="2" swarmmax="4" swarmradius="300" scale="0.4" commonness="0">
     <overridecommonness leveltype="wastesbasic" commonness="7" />
     <Sprite texture="%ModDir%/SubnauticaFishSheet.png" sourcerect="18,367,79,95" origin="0.5,0.5" />
     <LightSprite texture="%ModDir%/SubnauticaFishLightsSheet.png" sourcerect="18,367,79,95" origin="0.5,0.5"/>
   </RedEyeye>
 
-  <SpineFish speed="150.0" wanderamount="3.0" wanderzamount="0.3" swarmmin="3" swarmmax="6" swarmradius="300" scale="0.25" commonness="0">
-    <overridecommonness leveltype="wastesbasic" commonness="9" />
+  <SpineFish speed="150.0" wanderamount="3.0" wanderzamount="0.3" swarmmin="3" swarmmax="6" swarmradius="300" scale="0.4" commonness="0">
+    <overridecommonness leveltype="wastesbasic" commonness="14" />
     <Sprite texture="%ModDir%/SubnauticaFishSheet.png" sourcerect="104,377,106,78" origin="0.5,0.5" />
   </SpineFish>
 
-  <Lavarang speed="300.0" wanderamount="3.0" wanderzamount="0.3" swarmmin="2" swarmmax="4" swarmradius="600" scale="0.25" commonness="0">
-    <overridecommonness leveltype="wastesbasic" commonness="5" />
+  <Lavarang speed="350.0" wanderamount="3.0" wanderzamount="0.3" swarmmin="2" swarmmax="4" swarmradius="600" scale="0.4" commonness="0">
+    <overridecommonness leveltype="wastesbasic" commonness="8" />
     <Sprite texture="%ModDir%/SubnauticaFishSheet.png" sourcerect="207,377,74,77" origin="0.5,0.5" />
     <LightSprite texture="%ModDir%/SubnauticaFishLightsSheet.png" sourcerect="207,377,74,77" origin="0.5,0.5"/>
   </Lavarang>

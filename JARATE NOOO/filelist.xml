@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<contentpackage name="JarateNOOO" modversion="1.0.2" corepackage="False" steamworkshopid="2953799251" gameversion="1.0.8.0">
+<contentpackage name="JarateNOOO" modversion="1.0.3" corepackage="False" steamworkshopid="2953799251" gameversion="1.0.8.0">
   <Text file="%ModDir%/Localization/English.xml" />
   <Text file="%ModDir%/Localization/Russian.xml" />
   <Text file="%ModDir%/Localization/German.xml" />

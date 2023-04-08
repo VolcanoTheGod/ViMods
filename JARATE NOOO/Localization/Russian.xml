@@ -11,9 +11,12 @@
 
   <entityname.jarateammobox>Банкатавые заряды для магнитной пушки</entityname.jarateammobox>
   <entitydescription.jarateammobox>Эти боеприпасы запрещены во всех 124 странах мира. Хоть сделайте вид, что вам не всё равно</entitydescription.jarateammobox>
-  
-  <entityname.jarashell>Снаряд "Женева" П.О.С.О.С.И.</entityname.jarashell>
+
+  <entityname.jarashell>Снаряд 'Женева' П.О.С.О.С.И.</entityname.jarashell>
   <entitydescription.jarashell>Это не военное преступление, если жертвы о нём не расскажут</entitydescription.jarashell>
+
+  <entityname.jaralaser>Заряды австралийского солнца</entityname.jaralaser>
+  <entitydescription.jaralaser>Обжарить до хрустящей корочки</entitydescription.jaralaser>
 
             <!-- AFFLICTIONS -->
 

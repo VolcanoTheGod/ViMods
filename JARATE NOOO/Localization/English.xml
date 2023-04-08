@@ -12,8 +12,11 @@
   <entityname.jarateammobox>Coilgun Jarate Ammo Box</entityname.jarateammobox>
   <entitydescription.jarateammobox>These are banned in all 124 countries around the world. At least pretend that you care</entitydescription.jarateammobox>
 
-  <entityname.jarashell>"GENEVA" S.U.K.K.I.T. Shell</entityname.jarashell>
+  <entityname.jarashell>'GENEVA' S.U.K.K.I.T. Shell</entityname.jarashell>
   <entitydescription.jarashell>It's not a war crime if the victims won't ever tell anyone about it.</entitydescription.jarashell>
+
+  <entityname.jaralaser>Australian Sun Charges</entityname.jaralaser>
+  <entitydescription.jaralaser>Fry until crispy</entitydescription.jaralaser>
 
           <!-- AFFLICTIONS -->
 

@@ -12,8 +12,11 @@
   <entityname.jarateammobox>Gaußkanone Jarate Munitionskiste</entityname.jarateammobox>
   <entitydescription.jarateammobox>Diese sind in allen 124 Ländern der Welt verboten. Tu wenigstens so, als würde es dich interessieren</entitydescription.jarateammobox>
 
-  <entityname.jarashell>"GENF" S.A.U.G.E.S. Granatenlager</entityname.jarashell>
+  <entityname.jarashell>'GENF' S.A.U.G.E.S. Granatenlager</entityname.jarashell>
   <entitydescription.jarashell>Es ist kein Kriegsverbrechen, wenn die Opfer niemals jemandem davon erzählen.</entitydescription.jarashell>
+
+  <entityname.jaralaser>Australische Sonnenladung</entityname.jaralaser>
+  <entitydescription.jaralaser>Braten bis sie knusprig sind</entitydescription.jaralaser>
 
           <!-- AFFLICTIONS -->
 
