@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<contentpackage name="ItsTheLittleThings" modversion="1.0.0" corepackage="False">
+  <Item file="%ModDir%/items.xml" />
+  <Other file="%ModDir%/sounds.xml" />
+  <Other file="%ModDir%/hqdefault.png" />
+  <Other file="%ModDir%/spritesheet.png" />
+</contentpackage>

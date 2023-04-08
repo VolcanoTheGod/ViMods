@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<infotexts language="English" nowhitespace="false" translatedname="English">
+
+          <!-- ITEMS -->
+
+  <entityname.jarate>Jarate</entityname.jarate>
+  <entitydescription.jarate>ITS AUSTRALIAN MOONSHINE NOT URINE</entitydescription.jarate>
+
+  <entityname.jaratedepthcharge>Jabomb</entityname.jaratedepthcharge>
+  <entitydescription.jaratedepthcharge>Explosives and moonshine. Ready to commit war crimes, aren't you?</entitydescription.jaratedepthcharge>
+
+  <entityname.jarateammobox>Coilgun Jarate Ammo Box</entityname.jarateammobox>
+  <entitydescription.jarateammobox>These are banned in all 124 countries around the world. At least pretend that you care</entitydescription.jarateammobox>
+
+  <entityname.jarashell>"GENEVA" S.U.K.K.I.T. Shell</entityname.jarashell>
+  <entitydescription.jarashell>It's not a war crime if the victims won't ever tell anyone about it.</entitydescription.jarashell>
+
+          <!-- AFFLICTIONS -->
+
+  <afflictionname.jarate>Jarate? NOOO</afflictionname.jarate>
+  <afflictiondescription.jarate>It's like you have just been covered in sulfuric acid, but IT STINKS SO BAD!</afflictiondescription.jarate>
+
+  <afflictionname.jaratebomb>Acute Jaratosis</afflictionname.jaratebomb>
+  <afflictiondescription.jaratebomb>Jarate is now literally running through your veins. You take even more damage from all sources</afflictiondescription.jaratebomb>
+
+  </infotexts>

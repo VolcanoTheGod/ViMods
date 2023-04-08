@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sounds>
+  <damagesound file="%ModDir%Kumant gasmask1.ogg" damagesoundtype="Kumant gasmask1" />
+</sounds>

@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Afflictions>
+  <Affliction
+    name=""
+    identifier="jarate"
+    description=""
+    type="debuff"
+    causeofdeathdescription="Died to Jarate"
+    selfcauseofdeathdescription="It's just hilarious. How on earth were you able to die to jarate?"
+    limbspecific="false"
+    indicatorlimb="Torso"
+    maxstrength="100"
+    iconcolors="160,160,160,255;255,255,150,255"
+    affectmachines="true">
+		<Effect minstrength="0"
+      maxstrength="500"
+      resistancefor="damage"
+      minresistance="0"
+      maxresistance="-0.5"
+      minscreenblur="0.2"
+      maxscreenblur="0.9"
+      strengthchange="-1">
+
+			<StatusEffect target="character" disabledeltatime="true" stackable="false">
+				<Conditional InWater="true"/>
+				<Effect strengthchange="-3" />
+			</StatusEffect>
+			<StatusEffect target="Character" disabledeltatime="true" stackable="true">
+				<Conditional jarate="gte 20" />
+				<ParticleEmitter particle="JarateDrip" copyentityangle="true" anglemin="0" anglemax="-180" particlespersecond="100" velocitymin="50" velocitymax="200" scalemin="0.3" scalemax="0.6"/>
+			</StatusEffect>
+    </Effect>
+    <icon texture="%ModDir%/Sprites/jarateaffliction.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0" />
+  </Affliction>
+
+  <Affliction
+    name=""
+    identifier="jaratebomb"
+    description=""
+    type="debuff"
+    causeofdeathdescription="Died to Jarate"
+    selfcauseofdeathdescription="It's just hilarious. How on earth were you able to die to jarate?"
+    limbspecific="false"
+    indicatorlimb="Torso"
+    maxstrength="500"
+    iconcolors="160,160,160,255;255,255,150,255"
+    affectmachines="true">
+    <Effect
+      minstrength="0"
+      maxstrength="500"
+      resistancefor="damage"
+      minresistance="0"
+      maxresistance="-0.5"
+      minscreenblur="0.2"
+      maxscreenblur="0.9"
+      strengthchange="-1" />
+		<Effect target="Character">
+			<StatusEffect target="character" disabledeltatime="true" stackable="false">
+				<Conditional InWater="true"/>
+				<Effect strengthchange="-3" />
+			</StatusEffect>
+			<StatusEffect target="Character" disabledeltatime="true" stackable="true">
+				<Conditional jarate="gte 20" />
+				<ParticleEmitter particle="JarateDrip" copyentityangle="true" anglemin="0" anglemax="-180" particlespersecond="100" velocitymin="50" velocitymax="200" scalemin="0.3" scalemax="0.6" ColorMultiplier="255,255,75,255"/>
+			</StatusEffect>
+    </Effect>
+    <icon texture="%ModDir%/Sprites/jaratebombaffliction.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0" />
+  </Affliction>
+
+</Afflictions>

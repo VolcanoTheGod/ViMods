@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <Item name="Chloroform Grenade" identifier="ChloroformGrenade" category="Equipment" maxstacksize="1" cargocontaineridentifier="explosivecrate" allowasextracargo="true" tags="smallitem,weapon,explosive,demolitionsexpert" Scale="0.18" impactsoundtag="impact_metal_light">
+    <PreferredContainer primary="secarmcab" minamount="1" maxamount="3" spawnprobability="0.75" notcampaign="true"/>
+    <Price baseprice="100" sold="false">
+      <Price storeidentifier="merchantoutpost" multiplier="1" />
+      <Price storeidentifier="merchantcity" multiplier="1" />
+      <Price storeidentifier="merchantresearch" multiplier="1" />
+      <Price storeidentifier="merchantmilitary" multiplier="0.8" />
+      <Price storeidentifier="merchantmine" multiplier="1" />
+    </Price>
+    <Deconstruct time="10">
+      <Item identifier="iron" />
+      <Item identifier="chlorine" mincondition="1.0" />
+      <Item identifier="carbon" mincondition="1.0" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="20" requiresrecipe="true">
+      <RequiredSkill identifier="weapons" level="35" />
+      <RequiredItem identifier="iron" />
+      <RequiredItem identifier="chlorine" />
+      <RequiredItem identifier="chlorine" />
+      <RequiredItem identifier="carbon" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Spritesheet.png" sourcerect="0,0,26,50" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Spritesheet.png" sourcerect="0,0,26,50" depth="0.55" origin="0.5,0.5" />
+    <Body width="26" height="50" density="30" />
+
+    <ItemComponent characterusable="false">
+
+      <StatusEffect type="OnUse" targettype="This" IsOn="true">
+        <Conditional IsOn="eq False" targetitemcomponent="This" />
+        <sound file="%ModDir%/GasActivation.ogg" range="800.0" />
+      </StatusEffect>
+
+      <StatusEffect type="OnActive" targettype="This" Condition="-0.5" />
+
+      <StatusEffect type="OnActive" targettype="NearbyCharacters">
+      <Affliction identifier="stun" strength="4"/>
+      <StatusEffect/>
+
+
+      <StatusEffect type="OnBroken" target="This">
+        <sound file="%ModDir%/GasDead.ogg" />
+        <Explosion range="25" force="0.0" smoke="true" flames="false" underwaterbubble="true" sparks="true" />
+      </StatusEffect>
+
+      <StatusEffect type="OnBroken" >
+        <Remove />
+      </StatusEffect>
+
+    </ItemComponent>
+
+    <Throwable slots="Any,RightHand,LeftHand" holdpos="0,0" handle1="0,0" throwforce="4.0" msg="ItemMsgPickUpSelect">
+      <StatusEffect type="OnSecondaryUse" target="This" Condition="-100.0" delay="1.5" disabledeltatime="true" checkconditionalalways="true" />
+    </Throwable>
+    <Quality>
+      <QualityStat stattype="ExplosionRadius" value="0.1"/>
+      <QualityStat stattype="ExplosionDamage" value="0.1"/>
+    </Quality>
+  </Item>

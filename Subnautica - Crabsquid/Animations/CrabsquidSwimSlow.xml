@@ -1,8 +1,8 @@
 ﻿<CrabsquidSwimSlow
   UseSineMovement="False"
   Flip="True"
-  FlipCooldown="2"
-  FlipDelay="1"
+  FlipCooldown="3"
+  FlipDelay="0.3"
   Mirror="True"
   MirrorLerp="True"
   WaveAmplitude="1"

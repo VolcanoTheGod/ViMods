@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentpackage name="[EN] PHAULIUS W.I.P" modversion="1.0.0" corepackage="False" gameversion="0.17.12.0">
+  <Submarine file="%ModDir%/[EN] PHAULIUS W.I.P.sub" />
+</contentpackage>

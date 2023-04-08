@@ -1,3 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<contentpackage name="Subnautica - Background" modversion="1.0.1" corepackage="False" gameversion="0.20.16.1">
+<contentpackage name="Subnautica - Background" modversion="1.0.0" corepackage="False" steamworkshopid="2957926595" gameversion="1.0.8.0">
+  <Other file="%ModDir%/SubnauticaFishSheet.png" />
+  <Other file="%ModDir%/SubnauticaFishLightsSheet.png" />
+  <BackgroundCreaturePrefabs file="%ModDir%/BackgroundFish.xml" />
 </contentpackage>

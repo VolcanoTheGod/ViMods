@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<prefabs>
+  <jarate color="255,255,255,255" lifetime="6000" fadeouttime="30">
+    <sprite texture="%ModDir%/FX/jaratedecal.png" sourcerect="0,0,512,512" />
+  </jarate>
+</prefabs>

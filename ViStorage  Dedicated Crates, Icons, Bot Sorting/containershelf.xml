@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <Item name="Container Shelf" category="Material" identifier="containershelf" linkable="true" allowedlinks="deconstructor,fabricator,medicalfabricator,containershelf" tags="container,containershelf,locker" pickdistance="50" scale="0.5" isshootable="true">
+    <Sprite texture="%ModDir%/containershelf.png" depth="0.84" sourcerect="0,0,96,349" origin="0.5,0.5" />
+    <Body width="96" height="349" density="100" />
+    <ItemContainer allowuioverlap="true" keepopenwhenequipped="false" movableframe="true" hideitems="false" capacity="12" slotsperrow="2" itempos="47,-17" iteminterval="0,-29" itemrotation="0" canbeselected="true" msg="ItemMsgInteractSelect">
+      <GuiFrame relativesize="0.4,0.5" minsize="140,170" maxsize="200,500" anchor="Center" style="ItemUI" />
+      <Containable items="resourcecontainer" />
+    </ItemContainer>
+    <Holdable selectkey="Select" pickkey="Use" slots="RightHand+LeftHand" holdpos="40,-40" handle1="-30,30" handle2="30,30" msg="ItemMsgDetach" PickingTime="5.0" attachable="true" aimable="false">
+      <RequiredItem items="crowbar" type="Equipped" />
+    </Holdable>
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
+      <RequiredSkill identifier="mechanical" level="50" />
+      <RequiredItem identifier="steel" />
+      <RequiredItem identifier="steel" />
+      <RequiredItem identifier="steel" />
+      <RequiredItem identifier="steel" />
+      <RequiredItem identifier="steel" />
+    </Fabricate>
+    <Deconstruct time="10">
+      <Item identifier="steel" />
+      <Item identifier="steel" />
+      <Item identifier="steel" />
+      <Item identifier="steel" />
+      <Item identifier="steel" />
+    </Deconstruct>
+  </Item>
+</Items>

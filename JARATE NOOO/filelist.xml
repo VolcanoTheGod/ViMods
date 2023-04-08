@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentpackage name="JarateNOOO" modversion="1.0.2" corepackage="False" steamworkshopid="2953799251" gameversion="1.0.8.0">
+  <Text file="%ModDir%/Localization/English.xml" />
+  <Text file="%ModDir%/Localization/Russian.xml" />
+  <Text file="%ModDir%/Localization/German.xml" />
+  <Other file="%ModDir%/Sprites/jarate.png" />
+  <Other file="%ModDir%/Sprites/jarateinv.png" />
+  <Other file="%ModDir%/FX/jaratedecal.png" />
+  <Other file="%ModDir%/FX/jaratedecalsmall.png" />
+  <Other file="%ModDir%/Sprites/jarateaffliction.png" />
+  <Other file="%ModDir%/Sprites/jaratebombaffliction.png" />
+  <Other file="%ModDir%/FX/jaratesplash.png" />
+  <Other file="%ModDir%/FX/jaratedrip.png" />
+  <Other file="%ModDir%/FX/jarate.ogg" />
+  <Item file="%ModDir%/items.xml" />
+  <Decals file="%ModDir%/decals.xml" />
+  <Particles file="%ModDir%/particles.xml" />
+  <Afflictions file="%ModDir%/afflictions.xml" />
+</contentpackage>

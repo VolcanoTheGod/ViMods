@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentpackage name="Moloch Milk RU" modversion="1.0.0" corepackage="False" steamworkshopid="2950522598" gameversion="1.0.8.0">
+  <Text file="%ModDir%/Localization/Russian.xml" />
+  <Other file="%ModDir%/hqdefault.png" />
+</contentpackage>
