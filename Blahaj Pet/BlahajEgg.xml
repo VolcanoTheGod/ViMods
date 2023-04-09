@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <Item name="" identifier="BlahajEgg" Tags="smallitem,monsterfood" health="100" damagedbyexplosions="true" damagedbyprojectiles="true" damagedbymeleeweapons="true" damagedbyrepairtools="true" category="Misc" scale="0.3" impactsoundtag="impact_soft">
+    <PreferredContainer primary="crewcab" />
+    <PreferredContainer secondary="abandonedstoragecab,wreckstoragecab" amount="1" spawnprobability="0.05" />
+    <!-- rectangular body to prevent the egg from rolling -->
+    <InventoryIcon texture="%ModDir%/blahajegg.png" sourcerect="1,1,223,263" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/blahajegg.png" depth="0.1" sourcerect="0,0,224,264" origin="0.5,0.83" />
+    <Body width="43" height="55" friction="1.0" restitution="0.01" angulardamping="0.8" density="11" />
+    <Price baseprice="1000" minleveldifficulty="15">
+      <Price storeidentifier="merchantoutpost" sold="false" />
+      <Price storeidentifier="merchantcity" multiplier="1.2" />
+      <Price storeidentifier="merchantresearch" multiplier="1.4" minavailable="1" />
+      <Price storeidentifier="merchantmilitary" sold="false" />
+      <Price storeidentifier="merchantmine" sold="false" multiplier="0.75" />
+    </Price>
+    <Deconstruct time="50000">
+      <Item identifier="blahajstop" />
+    </Deconstruct>
+    <Holdable slots="RightHand+LeftHand" holdpos="0,50" handle1="0,-10" handle2="0,-10" aimable="false" msg="ItemMsgPickUpSelect" >
+      <StatusEffect type="OnBroken" target="This">
+        <particleemitter particle="whitegoosplash" particleamount="20" velocitymin="0" velocitymax="300" anglemin="0" anglemax="360" scalemin="0.5" scalemax="1.0" emitinterval="0" particlespersecond="0" highqualitycollisiondetection="False" copyentityangle="False" />
+        <Sound file="Content/Items/Medical/Bandage2.ogg" range="500" />
+        <Remove />
+      </StatusEffect>
+      <StatusEffect type="OnFire" target="This" Condition="-5.0" />
+    </Holdable>
+    <ItemContainer capacity="1" hideitems="true" showcontainedstateindicator="false" maxstacksize="1">
+      <Containable items="antibloodloss1">
+        <StatusEffect type="OnContaining" target="Contained" Condition="-1" />
+        <StatusEffect type="OnContaining" target="This" Condition="0" setvalue="true">
+          <SpawnCharacter speciesname="Blahaj" />
+          <Remove />
+        </StatusEffect>
+      </Containable>
+    </ItemContainer>
+  </Item>
+  <Item name="" identifier="blahajstop" Tags="" category="Misc" scale="0.5" impactsoundtag="impact_soft">
+    <Sprite texture="%ModDir%/stop.png" depth="0.7" sourcerect="0,0,128,156" origin="0.5,0.5" />
+    <ItemComponent>
+      <StatusEffect type="Always" target="this">
+        <Explosion range="2048.0" ballastfloradamage="0" structuredamage="0" itemdamage="0" force="1000.0" severlimbsprobability="1" penetration="1">
+          <Conditional speciesname="human"/>
+          <Affliction identifier="internaldamage" strength="500" />
+        </Explosion>
+        <sound file="%ModDir%/blahaj_takeDamage1.ogg" range="5000" volume="3" />
+        <Sound file="Content/Items/Medical/Bandage2.ogg" range="5000" volume="3" />
+        <Remove />
+      </StatusEffect>
+    </ItemComponent>
+  </Item>
+</Items>

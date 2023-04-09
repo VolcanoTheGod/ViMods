@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentpackage name="Blahaj Pet" modversion="1.0.0" corepackage="False" steamworkshopid="2959910347" gameversion="1.0.8.0">
+  <Text file="%ModDir%/Localization/English.xml" />
+  <Text file="%ModDir%/Localization/Russian.xml" />
+  <Character file="%ModDir%/Blahaj.xml" />
+  <Item file="%ModDir%/BlahajEgg.xml" />
+  <Other file="%ModDir%/blahaj.png" />
+  <Other file="%ModDir%/BlahajEgg.png" />
+  <Other file="%ModDir%/stop.png" />
+  <Other file="%ModDir%/blahaj_idle1.ogg" />
+  <Other file="%ModDir%/blahaj_idle2.ogg" />
+  <Other file="%ModDir%/blahaj_idle3.ogg" />
+  <Other file="%ModDir%/blahaj_positive.ogg" />
+  <Other file="%ModDir%/blahaj_negative.ogg" />
+  <Other file="%ModDir%/blahaj_takeDamage1.ogg" />
+  <Other file="%ModDir%/blahaj_takeDamage2.ogg" />
+</contentpackage>

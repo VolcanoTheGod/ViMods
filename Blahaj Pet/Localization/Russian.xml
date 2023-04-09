@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<infotexts language="Russian" nowhitespace="false" translatedname="Русский">
+
+          <!-- ITEMS -->
+
+  <entityname.BlahajEgg>Плюшевое яйцо</entityname.BlahajEgg>
+  <entitydescription.BlahajEgg>Странное яйцо. Мягкое и тёплое</entitydescription.BlahajEgg>
+
+  <entityname.blahajstop>Ты монстр</entityname.blahajstop>
+  <entitydescription.blahajstop>ОСТАНОВИСЬ</entitydescription.blahajstop>
+
+  </infotexts>
