@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentpackage name="No Nuke Craft" modversion="1.0.0" corepackage="False" steamworkshopid="2960957045" gameversion="1.0.8.0">
+  <Item file="%ModDir%/NukeOverride.xml" />
+</contentpackage>
