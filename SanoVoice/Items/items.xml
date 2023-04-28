@@ -126,14 +126,14 @@
         <StatusEffect type="OnUse" target="This" condition="-200" />
         <StatusEffect type="OnUse" target="This" condition="-200" CheckConditionalAlways="true">
           <Conditional condition="gte 5" />
-          <sound file="%ModDir%/Items/Sano_beep.ogg" type="OnUse" range="300.0" loop="false" volume="1.0" />
+          <sound file="%ModDir%/Items/Sano_beep.ogg" type="OnUse" range="300.0" loop="false" volume="0.5" />
         </StatusEffect>
       </input>
       <input name="set_state" displayname="connection.setstate">
         <StatusEffect type="OnUse" target="This" condition="-200" />
         <StatusEffect type="OnUse" target="This" condition="-200" CheckConditionalAlways="true">
           <Conditional condition="gte 5" />
-          <sound file="%ModDir%/Items/Sano_beep.ogg" type="OnUse" range="300.0" loop="false" volume="1.0" />
+          <sound file="%ModDir%/Items/Sano_beep.ogg" type="OnUse" range="300.0" loop="false" volume="0.5" />
         </StatusEffect>
       </input>
     </ConnectionPanel>

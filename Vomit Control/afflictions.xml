@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Afflictions>
+
+<Affliction
+  name="Nausea Supressed"
+  identifier="nausearesistance"
+  type="resistance"
+  isbuff="true"
+  limbspecific="false"
+  indicatorlimb="Head"
+  maxstrength="600"
+  affectmachines="false"
+  MedicalSkillGain="0.01">
+  <Effect minstrength="0" maxstrength="600"
+    strengthchange="-1"
+    resistancefor="nausea"
+    minresistance="0"
+    maxresistance="1"/>
+  <icon texture="%ModDir%/nausearesistance.png" sourcerect="0,0,128,128" color="10,193,114,255" origin="0,0"/>
+</Affliction>
+
+</Afflictions>

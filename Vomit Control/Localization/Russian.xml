@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<infotexts language="Russian" nowhitespace="false" translatedname="Русский">
+
+          <!-- ITEMS -->
+
+  <entityname.itopride>Итоприд</entityname.itopride>
+  <entitydescription.itopride>Мощное противорвотное средство. Также помогает от тошноты</entitydescription.itopride>
+
+  <entityname.ipecac>Ипекакуана</entityname.ipecac>
+  <entitydescription.ipecac>Мощное средство, вызывающее рвоту. Может подавлять действие итоприда</entitydescription.ipecac>
+
+            <!-- AFFLICTIONS -->
+
+  <afflictionname.nausearesistance>Устойчивость к тошноте</afflictionname.nausearesistance>
+  <afflictiondescription.nausearesistance>Вы чувствуете странную твёрдость своего сознания. На какое-то время. В груди болит...</afflictiondescription.nausearesistance>
+
+  </infotexts>

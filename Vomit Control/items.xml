@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <Item name="" identifier="itopride" category="Medical" maxstacksize="8" cargocontaineridentifier="mediccrate" Tags="smallitem,chem,medical,syringe" description="" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light">
+      <Upgrade gameversion="0.10.0.0" scale="0.5" />
+      <PreferredContainer primary="medcab" minamount="2" maxamount="4" spawnprobability="0.05" notcampaign="false"/>
+      <PreferredContainer secondary="wrecksupplycab,beaconsupplycab" amount="1" spawnprobability="0.01" />
+      <PreferredContainer secondary="wreckmedcab,abandonedmedcab" minamount="1" maxamount="2" spawnprobability="0.05" />
+      <PreferredContainer secondary="medcontainer"/>
+      <Price baseprice="25" minavailable="4">
+        <Price storeidentifier="merchantoutpost" sold="false" />
+        <Price storeidentifier="merchantcity" multiplier="1.0" />
+        <Price storeidentifier="merchantresearch" multiplier="0.9" />
+        <Price storeidentifier="merchantmilitary" multiplier="1.2" />
+        <Price storeidentifier="merchantmine" multiplier="0.75" />
+      </Price>
+      <SuitableTreatment identifier="nausea" suitability="40" />
+      <Fabricate suitablefabricators="vendingmachine" requiredtime="1" requiredmoney="50" fabricationlimitmin="0" fabricationlimitmax="10"/>
+      <InventoryIcon texture="%ModDir%/nauseadrugs.png" sourcerect="0,0,64,60" origin="0.5,0.5" />
+      <Sprite texture="%ModDir%/nauseadrugs.png" sourcerect="0,0,64,60" depth="0.6" origin="0.5,0.5" scale="0.25" />
+      <Body width="35" height="65" density="10.2" waterdragcoefficient="1"/>
+      <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="10" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true">
+        <RequiredSkill identifier="medical" level="15" />
+        <StatusEffect type="OnUse" target="This" Condition="-100.0" setvalue="true"/>
+        <StatusEffect tags="medical" type="OnSuccess" target="This, Limb" duration="125.0">
+          <ReduceAffliction type="nausea" amount="-1" />
+          <Affliction identifier="organdamage" amount="0.2" />
+          <Affliction identifier="nausearesistance" amount="2" />
+        </StatusEffect>
+        <StatusEffect tags="medical" type="OnFailure" target="This, Limb" duration="50.0">
+          <ReduceAffliction type="nausea" amount="-1" />
+          <Affliction identifier="organdamage" amount="0.2" />
+          <Affliction identifier="nausearesistance" amount="2" />
+        </StatusEffect>
+        <!-- Remove the item when fully used -->
+        <StatusEffect type="OnBroken" target="This">
+          <Remove />
+        </StatusEffect>
+      </MeleeWeapon>
+      <SkillRequirementHint identifier="medical" level="15" />
+  </Item>
+
+  <Item name="" identifier="ipecac" category="Medical" maxstacksize="8" cargocontaineridentifier="mediccrate" Tags="smallitem,chem,medical,syringe" description="" useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light">
+      <Upgrade gameversion="0.10.0.0" scale="0.5" />
+      <PreferredContainer primary="medcab" minamount="2" maxamount="4" spawnprobability="0.05" notcampaign="false"/>
+      <PreferredContainer secondary="wrecksupplycab,beaconsupplycab" amount="1" spawnprobability="0.01" />
+      <PreferredContainer secondary="wreckmedcab,abandonedmedcab" minamount="1" maxamount="2" spawnprobability="0.05" />
+      <PreferredContainer secondary="medcontainer"/>
+      <Price baseprice="25" minavailable="4">
+        <Price storeidentifier="merchantoutpost" sold="false" />
+        <Price storeidentifier="merchantcity" multiplier="1.0" />
+        <Price storeidentifier="merchantresearch" multiplier="0.9" />
+        <Price storeidentifier="merchantmilitary" multiplier="1.2" />
+        <Price storeidentifier="merchantmine" multiplier="0.75" />
+      </Price>
+      <SuitableTreatment identifier="nausea" suitability="40" />
+      <Fabricate suitablefabricators="vendingmachine" requiredtime="1" requiredmoney="50" fabricationlimitmin="0" fabricationlimitmax="10"/>
+      <InventoryIcon texture="%ModDir%/nauseadrugs.png" sourcerect="64,0,64,60" origin="0.5,0.5" />
+      <Sprite texture="%ModDir%/nauseadrugs.png" sourcerect="64,0,64,60" depth="0.6" origin="0.5,0.5" scale="0.25" />
+      <Body width="35" height="65" density="10.2" waterdragcoefficient="1"/>
+      <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="10" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true">
+        <RequiredSkill identifier="medical" level="15" />
+        <StatusEffect type="OnUse" target="This" Condition="-100.0" setvalue="true"/>
+        <StatusEffect tags="medical" type="OnSuccess" target="This, Limb" duration="100.0">
+          <ReduceAffliction type="nausearesistance" amount="-1" />
+          <Affliction identifier="organdamage" amount="0.2" />
+          <Affliction identifier="nausea" amount="2" />
+        </StatusEffect>
+        <StatusEffect tags="medical" type="OnFailure" target="This, Limb" duration="50.0">
+          <ReduceAffliction type="nausearesistance" amount="-1" />
+          <Affliction identifier="organdamage" amount="0.2" />
+          <Affliction identifier="nausea" amount="2" />
+        </StatusEffect>
+        <!-- Remove the item when fully used -->
+        <StatusEffect type="OnBroken" target="This">
+          <Remove />
+        </StatusEffect>
+      </MeleeWeapon>
+      <SkillRequirementHint identifier="medical" level="15" />
+  </Item>
+
+</Items>

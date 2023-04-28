@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentpackage name="MegaFlare" modversion="1.0.0" corepackage="False" steamworkshopid="2964391996" gameversion="1.0.9.0">
+  <Item file="%ModDir%/items.xml" />
+  <Other file="%ModDir%/MegaFlare.png" />
+  <Text file="%ModDir%/Localization/Russian.xml" />
+  <Text file="%ModDir%/Localization/English.xml" />
+</contentpackage>

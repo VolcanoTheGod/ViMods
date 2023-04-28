@@ -1,4 +1,5 @@
-﻿<BiterSwimSlow
+﻿<BlighterSwimSlow
+  type="Blighter"
   UseSineMovement="False"
   Flip="True"
   FlipCooldown="1"
@@ -15,7 +16,7 @@
   TailAngle="NaN"
   SteerTorque="25"
   LegTorque="25"
-  MovementSpeed="1.4779475"
+  MovementSpeed="1.3070735"
   CycleSpeed="1"
   HeadAngle="97"
   TorsoAngle="NaN"

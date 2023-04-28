@@ -249,7 +249,7 @@
         <SpawnItem identifiers="jaratebolt" spawnposition="ThisInventory" />
       </StatusEffect>
       <StatusEffect type="OnUse" target="This" condition="-0.5" disabledeltatime="true">
-        <RequiredItem items="jaratenbolt" type="Contained" />
+        <RequiredItem items="jaratebolt" type="Contained" />
       </StatusEffect>
       <Containable items="jaratebolt" />
     </ItemContainer>

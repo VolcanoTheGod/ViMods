@@ -1,0 +1,483 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <Item name="Storage Container [Oil]" identifier="toolboxOil" category="Equipment" tags="toolbox,mediumitem,mobilecontainer,vibox" cargocontaineridentifier="metalcrate" showcontentsintooltip="true" Scale="0.5" fireproof="true" description="A storage container for oil cans." impactsoundtag="impact_metal_heavy" waterproof="true">
+    <PreferredContainer primary="storagecab" />
+    <Deconstruct time="10">
+      <Item identifier="steel" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
+      <Item identifier="steel" />
+    </Fabricate>
+    <InventoryIcon texture="e" sourcerect="0,448,64,64" origin="0.5,0.6" />
+    <Sprite texture="%ModDir%/containersspritesextras.png" sourcerect="0,448,64,64" origin="0.5,0.6" />
+    <ContainedSprite name="Resource Container" allowedcontainertags="containershelf" texture="%ModDir%/containershelf.png" sourcerect="18,350,59,22" depth="0.55" origin="0.5,0.5" />
+    <Body width="87" height="71" density="20" />
+    <MeleeWeapon slots="RightHand,LeftHand" controlpose="true" aimpos="45,10" handle1="0,10" handle2="0,10" holdangle="90" reload="1" range="50" combatpriority="5" msg="ItemMsgPickUpSelect">
+      <Attack structuredamage="10" itemdamage="5" stun="0.6" targetimpulse="2">
+        <Affliction identifier="blunttrauma" strength="2" />
+        <Sound file="Content/Items/Weapons/Smack2.ogg" range="800" />
+      </Attack>
+    </MeleeWeapon>
+    <ItemContainer capacity="12" keepopenwhenequipped="false" movableframe="true">
+      <Containable items="oil_can" />
+    </ItemContainer>
+    <aitarget sightrange="1000" soundrange="1000" fadeouttime="2" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="Storage Container [CO2 Filter]" identifier="toolboxCO2" category="Equipment" tags="toolbox,mediumitem,mobilecontainer,vibox" cargocontaineridentifier="metalcrate" showcontentsintooltip="true" Scale="0.5" fireproof="true" description="A storage container for CO2 filter cartridges." impactsoundtag="impact_metal_heavy" waterproof="true">
+    <PreferredContainer primary="storagecab" />
+    <Deconstruct time="10">
+      <Item identifier="steel" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
+      <Item identifier="steel" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/containersspritesextras.png" sourcerect="64,448,64,64" origin="0.5,0.6" />
+    <Sprite texture="%ModDir%/containersspritesextras.png" sourcerect="64,448,64,64" origin="0.5,0.6" />
+    <ContainedSprite name="Resource Container" allowedcontainertags="containershelf" texture="%ModDir%/containershelf.png" sourcerect="18,350,59,22" depth="0.55" origin="0.5,0.5" />
+    <Body width="87" height="71" density="20" />
+    <MeleeWeapon slots="RightHand,LeftHand" controlpose="true" aimpos="45,10" handle1="0,10" handle2="0,10" holdangle="90" reload="1" range="50" combatpriority="5" msg="ItemMsgPickUpSelect">
+      <Attack structuredamage="10" itemdamage="5" stun="0.6" targetimpulse="2">
+        <Affliction identifier="blunttrauma" strength="2" />
+        <Sound file="Content/Items/Weapons/Smack2.ogg" range="800" />
+      </Attack>
+    </MeleeWeapon>
+    <ItemContainer capacity="12" keepopenwhenequipped="false" movableframe="true">
+      <Containable items="co2_cartridge" />
+    </ItemContainer>
+    <aitarget sightrange="1000" soundrange="1000" fadeouttime="2" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="Storage Container [Fuse]" identifier="toolboxFuse" category="Equipment" tags="toolbox,mediumitem,mobilecontainer,vibox" cargocontaineridentifier="metalcrate" showcontentsintooltip="true" Scale="0.5" fireproof="true" description="A storage container for Fuses." impactsoundtag="impact_metal_heavy" waterproof="true">
+    <PreferredContainer primary="storagecab" />
+    <Deconstruct time="10">
+      <Item identifier="steel" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
+      <Item identifier="steel" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/containersspritesextras.png" sourcerect="128,448,64,64" origin="0.5,0.6" />
+    <Sprite texture="%ModDir%/containersspritesextras.png" sourcerect="128,448,64,64" origin="0.5,0.6" />
+    <ContainedSprite name="Resource Container" allowedcontainertags="containershelf" texture="%ModDir%/containershelf.png" sourcerect="18,350,59,22" depth="0.55" origin="0.5,0.5" />
+    <Body width="87" height="71" density="20" />
+    <MeleeWeapon slots="RightHand,LeftHand" controlpose="true" aimpos="45,10" handle1="0,10" handle2="0,10" holdangle="90" reload="1" range="50" combatpriority="5" msg="ItemMsgPickUpSelect">
+      <Attack structuredamage="10" itemdamage="5" stun="0.6" targetimpulse="2">
+        <Affliction identifier="blunttrauma" strength="2" />
+        <Sound file="Content/Items/Weapons/Smack2.ogg" range="800" />
+      </Attack>
+    </MeleeWeapon>
+    <ItemContainer capacity="12" keepopenwhenequipped="false" movableframe="true">
+      <Containable items="fuse" />
+    </ItemContainer>
+    <aitarget sightrange="1000" soundrange="1000" fadeouttime="2" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="Storage Container [Oil Filter]" identifier="toolboxOilFilter" category="Equipment" tags="toolbox,mediumitem,mobilecontainer,vibox" cargocontaineridentifier="metalcrate" showcontentsintooltip="true" Scale="0.5" fireproof="true" description="A storage container for Oil Filters." impactsoundtag="impact_metal_heavy" waterproof="true">
+    <PreferredContainer primary="storagecab" />
+    <Deconstruct time="10">
+      <Item identifier="steel" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
+      <Item identifier="steel" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/containersspritesextras.png" sourcerect="192,448,64,64" origin="0.5,0.6" />
+    <Sprite texture="%ModDir%/containersspritesextras.png" sourcerect="192,448,64,64" origin="0.5,0.6" />
+    <ContainedSprite name="Resource Container" allowedcontainertags="containershelf" texture="%ModDir%/containershelf.png" sourcerect="18,350,59,22" depth="0.55" origin="0.5,0.5" />
+    <Body width="87" height="71" density="20" />
+    <MeleeWeapon slots="RightHand,LeftHand" controlpose="true" aimpos="45,10" handle1="0,10" handle2="0,10" holdangle="90" reload="1" range="50" combatpriority="5" msg="ItemMsgPickUpSelect">
+      <Attack structuredamage="10" itemdamage="5" stun="0.6" targetimpulse="2">
+        <Affliction identifier="blunttrauma" strength="2" />
+        <Sound file="Content/Items/Weapons/Smack2.ogg" range="800" />
+      </Attack>
+    </MeleeWeapon>
+    <ItemContainer capacity="12" keepopenwhenequipped="false" movableframe="true">
+      <Containable items="oil_filter" />
+    </ItemContainer>
+    <aitarget sightrange="1000" soundrange="1000" fadeouttime="2" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="Storage Container [Motors]" identifier="toolboxMotors" category="Equipment" tags="toolbox,mediumitem,mobilecontainer,vibox" cargocontaineridentifier="metalcrate" showcontentsintooltip="true" Scale="0.5" fireproof="true" description="A storage container for electric motors." impactsoundtag="impact_metal_heavy" waterproof="true">
+    <PreferredContainer primary="storagecab" />
+    <Deconstruct time="10">
+      <Item identifier="steel" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
+      <Item identifier="steel" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/containersspritesextras.png" sourcerect="256,448,64,64" origin="0.5,0.6" />
+    <Sprite texture="%ModDir%/containersspritesextras.png" sourcerect="256,448,64,64" origin="0.5,0.6" />
+    <ContainedSprite name="Resource Container" allowedcontainertags="containershelf" texture="%ModDir%/containershelf.png" sourcerect="18,350,59,22" depth="0.55" origin="0.5,0.5" />
+    <Body width="87" height="71" density="20" />
+    <MeleeWeapon slots="RightHand,LeftHand" controlpose="true" aimpos="45,10" handle1="0,10" handle2="0,10" holdangle="90" reload="1" range="50" combatpriority="5" msg="ItemMsgPickUpSelect">
+      <Attack structuredamage="10" itemdamage="5" stun="0.6" targetimpulse="2">
+        <Affliction identifier="blunttrauma" strength="2" />
+        <Sound file="Content/Items/Weapons/Smack2.ogg" range="800" />
+      </Attack>
+    </MeleeWeapon>
+    <ItemContainer capacity="12" keepopenwhenequipped="false" movableframe="true">
+      <Containable items="electric_motor" />
+    </ItemContainer>
+    <aitarget sightrange="1000" soundrange="1000" fadeouttime="2" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="Storage Container [CPR]" identifier="toolboxCPR" category="Equipment" tags="toolbox,mediumitem,mobilecontainer,vibox" cargocontaineridentifier="metalcrate" showcontentsintooltip="true" Scale="0.5" fireproof="true" description="A storage container for CPR items such as defibrillators and AutoPulses." impactsoundtag="impact_metal_heavy" waterproof="true">
+    <PreferredContainer primary="storagecab" />
+    <Deconstruct time="10">
+      <Item identifier="steel" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
+      <Item identifier="steel" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/containersspritesextras.png" sourcerect="0,0,64,64" origin="0.5,0.6" />
+    <Sprite texture="%ModDir%/containersspritesextras.png" sourcerect="0,0,64,64" origin="0.5,0.6" />
+    <ContainedSprite name="Resource Container" allowedcontainertags="containershelf" texture="%ModDir%/containershelf.png" sourcerect="18,350,59,22" depth="0.55" origin="0.5,0.5" />
+    <Body width="87" height="71" density="20" />
+    <MeleeWeapon slots="RightHand,LeftHand" controlpose="true" aimpos="45,10" handle1="0,10" handle2="0,10" holdangle="90" reload="1" range="50" combatpriority="5" msg="ItemMsgPickUpSelect">
+      <Attack structuredamage="10" itemdamage="5" stun="0.6" targetimpulse="2">
+        <Affliction identifier="blunttrauma" strength="2" />
+        <Sound file="Content/Items/Weapons/Smack2.ogg" range="800" />
+      </Attack>
+    </MeleeWeapon>
+    <ItemContainer capacity="12" keepopenwhenequipped="false" movableframe="true">
+      <Containable items="defibrillator, aed, bvm, autocpr" />
+    </ItemContainer>
+    <aitarget sightrange="1000" soundrange="1000" fadeouttime="2" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="Storage Container [MedTools]" identifier="toolboxMed" category="Equipment" tags="toolbox,mediumitem,mobilecontainer,vibox" cargocontaineridentifier="metalcrate" showcontentsintooltip="true" Scale="0.5" fireproof="true" description="A storage container for medical tools." impactsoundtag="impact_metal_heavy" waterproof="true">
+    <PreferredContainer primary="storagecab" />
+    <Deconstruct time="10">
+      <Item identifier="steel" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
+      <Item identifier="steel" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/containersspritesextras.png" sourcerect="64,0,64,64" origin="0.5,0.6" />
+    <Sprite texture="%ModDir%/containersspritesextras.png" sourcerect="64,0,64,64" origin="0.5,0.6" />
+    <ContainedSprite name="Resource Container" allowedcontainertags="containershelf" texture="%ModDir%/containershelf.png" sourcerect="18,350,59,22" depth="0.55" origin="0.5,0.5" />
+    <Body width="87" height="71" density="20" />
+    <MeleeWeapon slots="RightHand,LeftHand" controlpose="true" aimpos="45,10" handle1="0,10" handle2="0,10" holdangle="90" reload="1" range="50" combatpriority="5" msg="ItemMsgPickUpSelect">
+      <Attack structuredamage="10" itemdamage="5" stun="0.6" targetimpulse="2">
+        <Affliction identifier="blunttrauma" strength="2" />
+        <Sound file="Content/Items/Weapons/Smack2.ogg" range="800" />
+      </Attack>
+    </MeleeWeapon>
+    <ItemContainer capacity="16" keepopenwhenequipped="false" movableframe="true">
+      <Containable items="bloodanalyzer, antisepticspray, healthscanner, traumashears, advscalpel, advhemostat, advretractors, surgicaldrill, surgerysaw, tweezers, organscalpel_liver, organscalpel_kidneys, organscalpel_lungs, organscalpel_heart, organscalpel_brain, chemalyzer" />
+    </ItemContainer>
+    <aitarget sightrange="1000" soundrange="1000" fadeouttime="2" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="Storage Container [Sutures]" identifier="toolboxSuture" category="Equipment" tags="toolbox,mediumitem,mobilecontainer,vibox" cargocontaineridentifier="metalcrate" showcontentsintooltip="true" Scale="0.5" fireproof="true" description="A storage container for sutures." impactsoundtag="impact_metal_heavy" waterproof="true">
+    <PreferredContainer primary="storagecab" />
+    <Deconstruct time="10">
+      <Item identifier="steel" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
+      <Item identifier="steel" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/containersspritesextras.png" sourcerect="128,0,64,64" origin="0.5,0.6" />
+    <Sprite texture="%ModDir%/containersspritesextras.png" sourcerect="128,0,64,64" origin="0.5,0.6" />
+    <ContainedSprite name="Resource Container" allowedcontainertags="containershelf" texture="%ModDir%/containershelf.png" sourcerect="18,350,59,22" depth="0.55" origin="0.5,0.5" />
+    <Body width="87" height="71" density="20" />
+    <MeleeWeapon slots="RightHand,LeftHand" controlpose="true" aimpos="45,10" handle1="0,10" handle2="0,10" holdangle="90" reload="1" range="50" combatpriority="5" msg="ItemMsgPickUpSelect">
+      <Attack structuredamage="10" itemdamage="5" stun="0.6" targetimpulse="2">
+        <Affliction identifier="blunttrauma" strength="2" />
+        <Sound file="Content/Items/Weapons/Smack2.ogg" range="800" />
+      </Attack>
+    </MeleeWeapon>
+    <ItemContainer capacity="12" keepopenwhenequipped="false" movableframe="true">
+      <Containable items="suture" />
+    </ItemContainer>
+    <aitarget sightrange="1000" soundrange="1000" fadeouttime="2" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="Storage Container [Ointment]" identifier="toolboxOintment" category="Equipment" tags="toolbox,mediumitem,mobilecontainer,vibox" cargocontaineridentifier="metalcrate" showcontentsintooltip="true" Scale="0.5" fireproof="true" description="A storage container for antibiotic ointment." impactsoundtag="impact_metal_heavy" waterproof="true">
+    <PreferredContainer primary="storagecab" />
+    <Deconstruct time="10">
+      <Item identifier="steel" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
+      <Item identifier="steel" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/containersspritesextras.png" sourcerect="192,0,64,64" origin="0.5,0.6" />
+    <Sprite texture="%ModDir%/containersspritesextras.png" sourcerect="192,0,64,64" origin="0.5,0.6" />
+    <ContainedSprite name="Resource Container" allowedcontainertags="containershelf" texture="%ModDir%/containershelf.png" sourcerect="18,350,59,22" depth="0.55" origin="0.5,0.5" />
+    <Body width="87" height="71" density="20" />
+    <MeleeWeapon slots="RightHand,LeftHand" controlpose="true" aimpos="45,10" handle1="0,10" handle2="0,10" holdangle="90" reload="1" range="50" combatpriority="5" msg="ItemMsgPickUpSelect">
+      <Attack structuredamage="10" itemdamage="5" stun="0.6" targetimpulse="2">
+        <Affliction identifier="blunttrauma" strength="2" />
+        <Sound file="Content/Items/Weapons/Smack2.ogg" range="800" />
+      </Attack>
+    </MeleeWeapon>
+    <ItemContainer capacity="12" keepopenwhenequipped="false" movableframe="true">
+      <Containable items="ointment" />
+    </ItemContainer>
+    <aitarget sightrange="1000" soundrange="1000" fadeouttime="2" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="Storage Container [Blahaj]" identifier="toolboxBlahaj" category="Equipment" tags="toolbox,mediumitem,mobilecontainer,vibox" cargocontaineridentifier="metalcrate" showcontentsintooltip="true" Scale="0.5" fireproof="true" description="A storage container for blue sharks." impactsoundtag="impact_metal_heavy" waterproof="true">
+    <PreferredContainer primary="storagecab" />
+    <Deconstruct time="10">
+      <Item identifier="steel" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
+      <Item identifier="steel" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/containersspritesextras.png" sourcerect="256,0,64,64" origin="0.4630526,0.5438536" />
+    <Sprite texture="%ModDir%/containersspritesextras.png" sourcerect="256,0,64,64" origin="0.5,0.6" />
+    <ContainedSprite name="Resource Container" allowedcontainertags="containershelf" texture="%ModDir%/containershelf.png" sourcerect="18,350,59,22" depth="0.55" origin="0.5,0.5" />
+    <Body width="87" height="71" density="20" />
+    <MeleeWeapon slots="RightHand,LeftHand" controlpose="true" aimpos="45,10" handle1="0,10" handle2="0,10" holdangle="90" reload="1" range="50" combatpriority="5" msg="ItemMsgPickUpSelect">
+      <Attack structuredamage="10" itemdamage="5" stun="0.6" targetimpulse="2">
+        <Affliction identifier="blunttrauma" strength="2" />
+        <Sound file="Content/Items/Weapons/Smack2.ogg" range="800" />
+      </Attack>
+    </MeleeWeapon>
+    <ItemContainer capacity="48" keepopenwhenequipped="false" movableframe="true">
+      <Containable items="blahaj" />
+    </ItemContainer>
+    <aitarget sightrange="1000" soundrange="1000" fadeouttime="2" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="Storage Container [Antiseptic]" identifier="toolboxAntis" category="Equipment" tags="toolbox,mediumitem,mobilecontainer,vibox" cargocontaineridentifier="metalcrate" showcontentsintooltip="true" Scale="0.5" fireproof="true" description="A storage container for bottles of antiseptic." impactsoundtag="impact_metal_heavy" waterproof="true">
+    <PreferredContainer primary="storagecab" />
+    <Deconstruct time="10">
+      <Item identifier="steel" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
+      <Item identifier="steel" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/containersspritesextras.png" sourcerect="0,64,64,64" origin="0.5,0.6" />
+    <Sprite texture="%ModDir%/containersspritesextras.png" sourcerect="0,64,64,64" origin="0.5,0.6" />
+    <ContainedSprite name="Resource Container" allowedcontainertags="containershelf" texture="%ModDir%/containershelf.png" sourcerect="18,350,59,22" depth="0.55" origin="0.5,0.5" />
+    <Body width="87" height="71" density="20" />
+    <MeleeWeapon slots="RightHand,LeftHand" controlpose="true" aimpos="45,10" handle1="0,10" handle2="0,10" holdangle="90" reload="1" range="50" combatpriority="5" msg="ItemMsgPickUpSelect">
+      <Attack structuredamage="10" itemdamage="5" stun="0.6" targetimpulse="2">
+        <Affliction identifier="blunttrauma" strength="2" />
+        <Sound file="Content/Items/Weapons/Smack2.ogg" range="800" />
+      </Attack>
+    </MeleeWeapon>
+    <ItemContainer capacity="48" keepopenwhenequipped="false" movableframe="true">
+      <Containable items="antiseptic" />
+    </ItemContainer>
+    <aitarget sightrange="1000" soundrange="1000" fadeouttime="2" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="Storage Container [MedItems]" identifier="toolboxMedItems" category="Equipment" tags="toolbox,mediumitem,mobilecontainer,vibox" cargocontaineridentifier="metalcrate" showcontentsintooltip="true" Scale="0.5" fireproof="true" description="A storage container for extra medical items." impactsoundtag="impact_metal_heavy" waterproof="true">
+    <PreferredContainer primary="storagecab" />
+    <Deconstruct time="10">
+      <Item identifier="steel" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
+      <Item identifier="steel" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/containersspritesextras.png" sourcerect="64,64,64,64" origin="0.5,0.6" />
+    <Sprite texture="%ModDir%/containersspritesextras.png" sourcerect="64,64,64,64" origin="0.5,0.6" />
+    <ContainedSprite name="Resource Container" allowedcontainertags="containershelf" texture="%ModDir%/containershelf.png" sourcerect="18,350,59,22" depth="0.55" origin="0.5,0.5" />
+    <Body width="87" height="71" density="20" />
+    <MeleeWeapon slots="RightHand,LeftHand" controlpose="true" aimpos="45,10" handle1="0,10" handle2="0,10" holdangle="90" reload="1" range="50" combatpriority="5" msg="ItemMsgPickUpSelect">
+      <Attack structuredamage="10" itemdamage="5" stun="0.6" targetimpulse="2">
+        <Affliction identifier="blunttrauma" strength="2" />
+        <Sound file="Content/Items/Weapons/Smack2.ogg" range="800" />
+      </Attack>
+    </MeleeWeapon>
+    <ItemContainer capacity="12" keepopenwhenequipped="false" movableframe="true">
+      <Containable items="endovascballoon, medstent, osteosynthesisimplants, spinalimplant, tourniquet, drainage, needle, gypsum" />
+    </ItemContainer>
+    <aitarget sightrange="1000" soundrange="1000" fadeouttime="2" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="Storage Container [Niche Drugs]" identifier="toolboxNicheDrugs" category="Equipment" tags="toolbox,mediumitem,mobilecontainer,vibox" cargocontaineridentifier="metalcrate" showcontentsintooltip="true" Scale="0.5" fireproof="true" description="A storage container for minor niche drugs." impactsoundtag="impact_metal_heavy" waterproof="true">
+    <PreferredContainer primary="storagecab" />
+    <Deconstruct time="10">
+      <Item identifier="steel" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
+      <Item identifier="steel" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/containersspritesextras.png" sourcerect="128,64,64,64" origin="0.5,0.6" />
+    <Sprite texture="%ModDir%/containersspritesextras.png" sourcerect="128,64,64,64" origin="0.5,0.6" />
+    <ContainedSprite name="Resource Container" allowedcontainertags="containershelf" texture="%ModDir%/containershelf.png" sourcerect="18,350,59,22" depth="0.55" origin="0.5,0.5" />
+    <Body width="87" height="71" density="20" />
+    <MeleeWeapon slots="RightHand,LeftHand" controlpose="true" aimpos="45,10" handle1="0,10" handle2="0,10" holdangle="90" reload="1" range="50" combatpriority="5" msg="ItemMsgPickUpSelect">
+      <Attack structuredamage="10" itemdamage="5" stun="0.6" targetimpulse="2">
+        <Affliction identifier="blunttrauma" strength="2" />
+        <Sound file="Content/Items/Weapons/Smack2.ogg" range="800" />
+      </Attack>
+    </MeleeWeapon>
+    <ItemContainer capacity="16" keepopenwhenequipped="false" movableframe="true">
+      <Containable items="immunosuppressant, thiamine, pressuremeds, streptokinase, adrenaline, tonicliquid, nitroglycerin, pomegrenadeextract, liquidoxygenite, antibleeding3, " />
+    </ItemContainer>
+    <aitarget sightrange="1000" soundrange="1000" fadeouttime="2" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="Storage Container [Blood Scanning]" identifier="toolboxBloodScan" category="Equipment" tags="toolbox,mediumitem,mobilecontainer,vibox" cargocontaineridentifier="metalcrate" showcontentsintooltip="true" Scale="0.5" fireproof="true" description="A storage container for blood cartridges." impactsoundtag="impact_metal_heavy" waterproof="true">
+    <PreferredContainer primary="storagecab" />
+    <Deconstruct time="10">
+      <Item identifier="steel" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
+      <Item identifier="steel" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/containersspritesextras.png" sourcerect="192,64,64,64" origin="0.5,0.6" />
+    <Sprite texture="%ModDir%/containersspritesextras.png" sourcerect="192,64,64,64" origin="0.5,0.6" />
+    <ContainedSprite name="Resource Container" allowedcontainertags="containershelf" texture="%ModDir%/containershelf.png" sourcerect="18,350,59,22" depth="0.55" origin="0.5,0.5" />
+    <Body width="87" height="71" density="20" />
+    <MeleeWeapon slots="RightHand,LeftHand" controlpose="true" aimpos="45,10" handle1="0,10" handle2="0,10" holdangle="90" reload="1" range="50" combatpriority="5" msg="ItemMsgPickUpSelect">
+      <Attack structuredamage="10" itemdamage="5" stun="0.6" targetimpulse="2">
+        <Affliction identifier="blunttrauma" strength="2" />
+        <Sound file="Content/Items/Weapons/Smack2.ogg" range="800" />
+      </Attack>
+    </MeleeWeapon>
+    <ItemContainer capacity="12" keepopenwhenequipped="false" movableframe="true">
+      <Containable items="bloodcollector" />
+    </ItemContainer>
+    <aitarget sightrange="1000" soundrange="1000" fadeouttime="2" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="Storage Container [Ringer]" identifier="toolboxRinger" category="Equipment" tags="toolbox,mediumitem,mobilecontainer,vibox" cargocontaineridentifier="metalcrate" showcontentsintooltip="true" Scale="0.5" fireproof="true" description="A storage container for ringer solution." impactsoundtag="impact_metal_heavy" waterproof="true">
+    <PreferredContainer primary="storagecab" />
+    <Deconstruct time="10">
+      <Item identifier="steel" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
+      <Item identifier="steel" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/containersspritesextras.png" sourcerect="0,128,64,64" origin="0.5,0.6" />
+    <Sprite texture="%ModDir%/containersspritesextras.png" sourcerect="0,128,64,64" origin="0.5,0.6" />
+    <ContainedSprite name="Resource Container" allowedcontainertags="containershelf" texture="%ModDir%/containershelf.png" sourcerect="18,350,59,22" depth="0.55" origin="0.5,0.5" />
+    <Body width="87" height="71" density="20" />
+    <MeleeWeapon slots="RightHand,LeftHand" controlpose="true" aimpos="45,10" handle1="0,10" handle2="0,10" holdangle="90" reload="1" range="50" combatpriority="5" msg="ItemMsgPickUpSelect">
+      <Attack structuredamage="10" itemdamage="5" stun="0.6" targetimpulse="2">
+        <Affliction identifier="blunttrauma" strength="2" />
+        <Sound file="Content/Items/Weapons/Smack2.ogg" range="800" />
+      </Attack>
+    </MeleeWeapon>
+    <ItemContainer capacity="12" keepopenwhenequipped="false" movableframe="true">
+      <Containable items="ringerssolution" />
+    </ItemContainer>
+    <aitarget sightrange="1000" soundrange="1000" fadeouttime="2" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="Storage Container [Poisons]" identifier="toolboxPoisons" category="Equipment" tags="toolbox,mediumitem,mobilecontainer,vibox" cargocontaineridentifier="metalcrate" showcontentsintooltip="true" Scale="0.5" fireproof="true" description="A storage container for poisons." impactsoundtag="impact_metal_heavy" waterproof="true">
+    <PreferredContainer primary="storagecab" />
+    <Deconstruct time="10">
+      <Item identifier="steel" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
+      <Item identifier="steel" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/containersspritesextras.png" sourcerect="64,128,64,64" origin="0.5,0.6" />
+    <Sprite texture="%ModDir%/containersspritesextras.png" sourcerect="64,128,64,64" origin="0.5,0.6" />
+    <ContainedSprite name="Resource Container" allowedcontainertags="containershelf" texture="%ModDir%/containershelf.png" sourcerect="18,350,59,22" depth="0.55" origin="0.5,0.5" />
+    <Body width="87" height="71" density="20" />
+    <MeleeWeapon slots="RightHand,LeftHand" controlpose="true" aimpos="45,10" handle1="0,10" handle2="0,10" holdangle="90" reload="1" range="50" combatpriority="5" msg="ItemMsgPickUpSelect">
+      <Attack structuredamage="10" itemdamage="5" stun="0.6" targetimpulse="2">
+        <Affliction identifier="blunttrauma" strength="2" />
+        <Sound file="Content/Items/Weapons/Smack2.ogg" range="800" />
+      </Attack>
+    </MeleeWeapon>
+    <ItemContainer capacity="16" keepopenwhenequipped="false" movableframe="true">
+      <Containable items="calyxanide, poison, europabrew, sulphuricacidsyringe" />
+    </ItemContainer>
+    <aitarget sightrange="1000" soundrange="1000" fadeouttime="2" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="Storage Container [Potent Drugs]" identifier="toolboxPotent" category="Equipment" tags="toolbox,mediumitem,mobilecontainer,vibox" cargocontaineridentifier="metalcrate" showcontentsintooltip="true" Scale="0.5" fireproof="true" description="A storage container for potent drugs." impactsoundtag="impact_metal_heavy" waterproof="true">
+    <PreferredContainer primary="storagecab" />
+    <Deconstruct time="10">
+      <Item identifier="steel" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
+      <Item identifier="steel" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/containersspritesextras.png" sourcerect="128,128,64,64" origin="0.5,0.6" />
+    <Sprite texture="%ModDir%/containersspritesextras.png" sourcerect="128,128,64,64" origin="0.5,0.6" />
+    <ContainedSprite name="Resource Container" allowedcontainertags="containershelf" texture="%ModDir%/containershelf.png" sourcerect="18,350,59,22" depth="0.55" origin="0.5,0.5" />
+    <Body width="87" height="71" density="20" />
+    <MeleeWeapon slots="RightHand,LeftHand" controlpose="true" aimpos="45,10" handle1="0,10" handle2="0,10" holdangle="90" reload="1" range="50" combatpriority="5" msg="ItemMsgPickUpSelect">
+      <Attack structuredamage="10" itemdamage="5" stun="0.6" targetimpulse="2">
+        <Affliction identifier="blunttrauma" strength="2" />
+        <Sound file="Content/Items/Weapons/Smack2.ogg" range="800" />
+      </Attack>
+    </MeleeWeapon>
+    <ItemContainer capacity="16" keepopenwhenequipped="false" movableframe="true">
+      <Containable items="deusizine, endocrinebooster, combatstimulantsyringe,  pressurestabilizer, steroids, hyperzine, meth, propofol, mannitol" />
+    </ItemContainer>
+    <aitarget sightrange="1000" soundrange="1000" fadeouttime="2" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="Storage Container [Empty Blood Bags]" identifier="toolboxEBB" category="Equipment" tags="toolbox,mediumitem,mobilecontainer,vibox" cargocontaineridentifier="metalcrate" showcontentsintooltip="true" Scale="0.5" fireproof="true" description="A storage container for empty blood bags" impactsoundtag="impact_metal_heavy" waterproof="true">
+    <PreferredContainer primary="storagecab" />
+    <Deconstruct time="10">
+      <Item identifier="steel" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
+      <Item identifier="steel" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/containersspritesextras.png" sourcerect="192,128,64,64" origin="0.5,0.6" />
+    <Sprite texture="%ModDir%/containersspritesextras.png" sourcerect="192,128,64,64" origin="0.5,0.6" />
+    <ContainedSprite name="Resource Container" allowedcontainertags="containershelf" texture="%ModDir%/containershelf.png" sourcerect="18,350,59,22" depth="0.55" origin="0.5,0.5" />
+    <Body width="87" height="71" density="20" />
+    <MeleeWeapon slots="RightHand,LeftHand" controlpose="true" aimpos="45,10" handle1="0,10" handle2="0,10" holdangle="90" reload="1" range="50" combatpriority="5" msg="ItemMsgPickUpSelect">
+      <Attack structuredamage="10" itemdamage="5" stun="0.6" targetimpulse="2">
+        <Affliction identifier="blunttrauma" strength="2" />
+        <Sound file="Content/Items/Weapons/Smack2.ogg" range="800" />
+      </Attack>
+    </MeleeWeapon>
+    <ItemContainer capacity="12" keepopenwhenequipped="false" movableframe="true">
+      <Containable items="emptybloodbag" />
+    </ItemContainer>
+    <aitarget sightrange="1000" soundrange="1000" fadeouttime="2" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="Storage Container [Cybernetics]" identifier="toolboxCyber" category="Equipment" tags="toolbox,mediumitem,mobilecontainer,vibox" cargocontaineridentifier="metalcrate" showcontentsintooltip="true" Scale="0.5" fireproof="true" description="A storage container for tools for cybernetics" impactsoundtag="impact_metal_heavy" waterproof="true">
+    <PreferredContainer primary="storagecab" />
+    <Deconstruct time="10">
+      <Item identifier="steel" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
+      <Item identifier="steel" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/containersspritesextras.png" sourcerect="64,192,64,64" origin="0.5,0.6" />
+    <Sprite texture="%ModDir%/containersspritesextras.png" sourcerect="64,192,64,64" origin="0.5,0.6" />
+    <ContainedSprite name="Resource Container" allowedcontainertags="containershelf" texture="%ModDir%/containershelf.png" sourcerect="18,350,59,22" depth="0.55" origin="0.5,0.5" />
+    <Body width="87" height="71" density="20" />
+    <MeleeWeapon slots="RightHand,LeftHand" controlpose="true" aimpos="45,10" handle1="0,10" handle2="0,10" holdangle="90" reload="1" range="50" combatpriority="5" msg="ItemMsgPickUpSelect">
+      <Attack structuredamage="10" itemdamage="5" stun="0.6" targetimpulse="2">
+        <Affliction identifier="blunttrauma" strength="2" />
+        <Sound file="Content/Items/Weapons/Smack2.ogg" range="800" />
+      </Attack>
+    </MeleeWeapon>
+    <ItemContainer capacity="12" keepopenwhenequipped="false" movableframe="true">
+      <Containable items="cyberarm, cyberleg, screwdriver, screwdriverhardened, screwdriverdementonite, fpgacircuit, weldingtool, steel, crowbar" />
+    </ItemContainer>
+    <aitarget sightrange="1000" soundrange="1000" fadeouttime="2" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+  <Item name="Storage Container [Vomit Control]" identifier="toolboxVomit" category="Equipment" tags="toolbox,mediumitem,mobilecontainer,vibox" cargocontaineridentifier="metalcrate" showcontentsintooltip="true" Scale="0.5" fireproof="true" description="A storage container for tools for vomit control pills" impactsoundtag="impact_metal_heavy" waterproof="true">
+    <PreferredContainer primary="storagecab" />
+    <Deconstruct time="10">
+      <Item identifier="steel" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
+      <Item identifier="steel" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/containersspritesextras.png" sourcerect="256,192,64,64" origin="0.5,0.6" />
+    <Sprite texture="%ModDir%/containersspritesextras.png" sourcerect="256,192,64,64" origin="0.5,0.6" />
+    <ContainedSprite name="Resource Container" allowedcontainertags="containershelf" texture="%ModDir%/containershelf.png" sourcerect="18,350,59,22" depth="0.55" origin="0.5,0.5" />
+    <Body width="87" height="71" density="20" />
+    <MeleeWeapon slots="RightHand,LeftHand" controlpose="true" aimpos="45,10" handle1="0,10" handle2="0,10" holdangle="90" reload="1" range="50" combatpriority="5" msg="ItemMsgPickUpSelect">
+      <Attack structuredamage="10" itemdamage="5" stun="0.6" targetimpulse="2">
+        <Affliction identifier="blunttrauma" strength="2" />
+        <Sound file="Content/Items/Weapons/Smack2.ogg" range="800" />
+      </Attack>
+    </MeleeWeapon>
+    <ItemContainer capacity="12" keepopenwhenequipped="false" movableframe="true">
+      <Containable items="itopride, ipecac" />
+    </ItemContainer>
+    <aitarget sightrange="1000" soundrange="1000" fadeouttime="2" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+</Items>

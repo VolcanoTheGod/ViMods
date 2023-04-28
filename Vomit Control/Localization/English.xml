@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<infotexts language="English" nowhitespace="false" translatedname="English">
+
+          <!-- ITEMS -->
+
+  <entityname.itopride>Itopride</entityname.itopride>
+  <entitydescription.itopride>A powerful vomitting supression drug. Also helps with nausea</entitydescription.itopride>
+
+  <entityname.ipecac>Ipecac</entityname.ipecac>
+  <entitydescription.ipecac>A powerful drug which can be used to induce vomitting. Decreases itopride effects</entitydescription.ipecac>
+
+            <!-- AFFLICTIONS -->
+
+  <afflictionname.nausearesistance>Nausea Resistance</afflictionname.nausearesistance>
+  <afflictiondescription.nausearesistance>Your conscience is oddly solid. For a while. Your chest stings...</afflictiondescription.nausearesistance>
+
+  </infotexts>

@@ -5,7 +5,7 @@
     <Body width="96" height="349" density="100" />
     <ItemContainer allowuioverlap="true" keepopenwhenequipped="false" movableframe="true" hideitems="false" capacity="12" slotsperrow="2" itempos="47,-17" iteminterval="0,-29" itemrotation="0" canbeselected="true" msg="ItemMsgInteractSelect">
       <GuiFrame relativesize="0.4,0.5" minsize="140,170" maxsize="200,500" anchor="Center" style="ItemUI" />
-      <Containable items="resourcecontainer" />
+      <Containable items="vibox" />
     </ItemContainer>
     <Holdable selectkey="Select" pickkey="Use" slots="RightHand+LeftHand" holdpos="40,-40" handle1="-30,30" handle2="30,30" msg="ItemMsgDetach" PickingTime="5.0" attachable="true" aimable="false">
       <RequiredItem items="crowbar" type="Equipped" />
