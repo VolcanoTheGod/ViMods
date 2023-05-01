@@ -787,7 +787,7 @@
       </Attack>
     </MeleeWeapon>
     <ItemContainer capacity="12" keepopenwhenequipped="false" movableframe="true">
-      <Containable items="batterycell, fulguriumbatterycell" />
+      <Containable items="batterycell, fulguriumbatterycell, alienpowercell" />
     </ItemContainer>
     <aitarget sightrange="1000" soundrange="1000" fadeouttime="2" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
@@ -859,7 +859,7 @@
       </Attack>
     </MeleeWeapon>
     <ItemContainer capacity="12" keepopenwhenequipped="false" movableframe="true">
-      <Containable items="smgmagazine, assaultriflemagazine" />
+      <Containable items="smgmagazine, assaultriflemagazine, hmgmagazine" />
     </ItemContainer>
     <aitarget sightrange="1000" soundrange="1000" fadeouttime="2" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
@@ -1267,7 +1267,7 @@
       </Attack>
     </MeleeWeapon>
     <ItemContainer capacity="12" keepopenwhenequipped="false" movableframe="true">
-      <Containable items="calyxanide, antipsychosis, antinarc, antiparalysis, deliriumineantidote, morbusineantidote, cyanideantidote, sufforinantidote, antirad" />
+      <Containable items="calyxanide, antipsychosis, antinarc, antiparalysis, deliriumineantidote, morbusineantidote, cyanideantidote, sufforinantidote, antirad, thalidomide" />
     </ItemContainer>
     <aitarget sightrange="1000" soundrange="1000" fadeouttime="2" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
@@ -1414,8 +1414,8 @@
     <Fabricate suitablefabricators="fabricator" requiredtime="20">
       <Item identifier="steel" />
     </Fabricate>
-    <InventoryIcon texture="%ModDir%/containerssprites.png" sourcerect="320,384,64,64" origin="0.5,0.6" />
-    <Sprite texture="%ModDir%/containerssprites.png" sourcerect="320,384,64,64" origin="0.5,0.6" />
+    <InventoryIcon texture="%ModDir%/containerssprites.png" sourcerect="256,448,64,64" origin="0.5,0.6" />
+    <Sprite texture="%ModDir%/containerssprites.png" sourcerect="256,448,64,64" origin="0.5,0.6" />
     <ContainedSprite name="Resource Container" allowedcontainertags="containershelf" texture="%ModDir%/containershelf.png" sourcerect="18,350,59,22" depth="0.55" origin="0.5,0.5" />
     <Body width="87" height="71" density="20" />
     <MeleeWeapon slots="RightHand,LeftHand" controlpose="true" aimpos="45,10" handle1="0,10" handle2="0,10" holdangle="90" reload="1" range="50" combatpriority="5" msg="ItemMsgPickUpSelect">
@@ -1426,6 +1426,31 @@
     </MeleeWeapon>
     <ItemContainer capacity="12" keepopenwhenequipped="false" movableframe="true">
       <Containable items="elastin" />
+    </ItemContainer>
+    <aitarget sightrange="1000" soundrange="1000" fadeouttime="2" />
+    <Upgrade gameversion="0.10.0.0" scale="0.5" />
+  </Item>
+
+  <Item name="Storage Container [Rifle Bullet]" identifier="toolboxrbullet" category="Equipment" tags="toolbox,mediumitem,mobilecontainer,vibox" cargocontaineridentifier="metalcrate" showcontentsintooltip="true" Scale="0.5" fireproof="true" description="A storage container for rifle bullets." impactsoundtag="impact_metal_heavy" waterproof="true">
+    <PreferredContainer primary="storagecab" />
+    <Deconstruct time="10">
+      <Item identifier="steel" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="20">
+      <Item identifier="steel" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/containerssprites.png" sourcerect="320,448,64,64" origin="0.5,0.6" />
+    <Sprite texture="%ModDir%/containerssprites.png" sourcerect="320,448,64,64" origin="0.5,0.6" />
+    <ContainedSprite name="Resource Container" allowedcontainertags="containershelf" texture="%ModDir%/containershelf.png" sourcerect="18,350,59,22" depth="0.55" origin="0.5,0.5" />
+    <Body width="87" height="71" density="20" />
+    <MeleeWeapon slots="RightHand,LeftHand" controlpose="true" aimpos="45,10" handle1="0,10" handle2="0,10" holdangle="90" reload="1" range="50" combatpriority="5" msg="ItemMsgPickUpSelect">
+      <Attack structuredamage="10" itemdamage="5" stun="0.6" targetimpulse="2">
+        <Affliction identifier="blunttrauma" strength="2" />
+        <Sound file="Content/Items/Weapons/Smack2.ogg" range="800" />
+      </Attack>
+    </MeleeWeapon>
+    <ItemContainer capacity="12" keepopenwhenequipped="false" movableframe="true">
+      <Containable items="riflebullet" />
     </ItemContainer>
     <aitarget sightrange="1000" soundrange="1000" fadeouttime="2" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />

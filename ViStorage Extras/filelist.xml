@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<contentpackage name="ViStorage Extras" modversion="1.0.0" corepackage="False" steamworkshopid="2968271654" gameversion="1.0.9.0">
+<contentpackage name="ViStorage Extras" modversion="1.0.2" corepackage="False" steamworkshopid="2968271654" gameversion="1.0.9.0">
   <Item file="%ModDir%/containers.xml" />
   <Other file="%ModDir%/containersspritesextras.png" />
 </contentpackage>

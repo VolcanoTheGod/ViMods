@@ -234,7 +234,7 @@
         <Sound file="Content/Items/Weapons/Smack2.ogg" range="800" />
       </Attack>
     </MeleeWeapon>
-    <ItemContainer capacity="48" keepopenwhenequipped="false" movableframe="true">
+    <ItemContainer capacity="6" keepopenwhenequipped="false" movableframe="true">
       <Containable items="blahaj" />
     </ItemContainer>
     <aitarget sightrange="1000" soundrange="1000" fadeouttime="2" />
@@ -282,7 +282,7 @@
         <Sound file="Content/Items/Weapons/Smack2.ogg" range="800" />
       </Attack>
     </MeleeWeapon>
-    <ItemContainer capacity="12" keepopenwhenequipped="false" movableframe="true">
+    <ItemContainer capacity="24" keepopenwhenequipped="false" movableframe="true">
       <Containable items="endovascballoon, medstent, osteosynthesisimplants, spinalimplant, tourniquet, drainage, needle, gypsum" />
     </ItemContainer>
     <aitarget sightrange="1000" soundrange="1000" fadeouttime="2" />
@@ -402,13 +402,13 @@
         <Sound file="Content/Items/Weapons/Smack2.ogg" range="800" />
       </Attack>
     </MeleeWeapon>
-    <ItemContainer capacity="16" keepopenwhenequipped="false" movableframe="true">
-      <Containable items="deusizine, endocrinebooster, combatstimulantsyringe,  pressurestabilizer, steroids, hyperzine, meth, propofol, mannitol" />
+    <ItemContainer capacity="20" keepopenwhenequipped="false" movableframe="true">
+      <Containable items="deusizine, endocrinebooster, combatstimulantsyringe,  pressurestabilizer, steroids, hyperzine, meth, propofol, mannitol, mannitolplus, experimentaltreatment, smartgraft, manna, cortizide, statin" />
     </ItemContainer>
     <aitarget sightrange="1000" soundrange="1000" fadeouttime="2" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
   </Item>
-  <Item name="Storage Container [Empty Blood Bags]" identifier="toolboxEBB" category="Equipment" tags="toolbox,mediumitem,mobilecontainer,vibox" cargocontaineridentifier="metalcrate" showcontentsintooltip="true" Scale="0.5" fireproof="true" description="A storage container for empty blood bags" impactsoundtag="impact_metal_heavy" waterproof="true">
+  <Item name="Storage Container [Empty Blood Packs]" identifier="toolboxEBB" category="Equipment" tags="toolbox,mediumitem,mobilecontainer,vibox" cargocontaineridentifier="metalcrate" showcontentsintooltip="true" Scale="0.5" fireproof="true" description="A storage container for empty blood packs" impactsoundtag="impact_metal_heavy" waterproof="true">
     <PreferredContainer primary="storagecab" />
     <Deconstruct time="10">
       <Item identifier="steel" />
@@ -427,7 +427,7 @@
       </Attack>
     </MeleeWeapon>
     <ItemContainer capacity="12" keepopenwhenequipped="false" movableframe="true">
-      <Containable items="emptybloodbag" />
+      <Containable items="emptybloodpack" />
     </ItemContainer>
     <aitarget sightrange="1000" soundrange="1000" fadeouttime="2" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />
@@ -451,7 +451,7 @@
       </Attack>
     </MeleeWeapon>
     <ItemContainer capacity="12" keepopenwhenequipped="false" movableframe="true">
-      <Containable items="cyberarm, cyberleg, screwdriver, screwdriverhardened, screwdriverdementonite, fpgacircuit, weldingtool, steel, crowbar" />
+      <Containable items="cyberarm, cyberleg, wrench, wrenchhardened, wrenchdementonite, screwdriver, screwdriverhardened, screwdriverdementonite, fpgacircuit, weldingtool, steel, crowbar" />
     </ItemContainer>
     <aitarget sightrange="1000" soundrange="1000" fadeouttime="2" />
     <Upgrade gameversion="0.10.0.0" scale="0.5" />

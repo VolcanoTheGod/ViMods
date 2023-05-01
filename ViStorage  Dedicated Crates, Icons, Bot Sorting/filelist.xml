@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<contentpackage name="ViStorage  Dedicated Crates, Icons, Bot Sorting" modversion="1.1.5" corepackage="False" steamworkshopid="2872807976" gameversion="1.0.9.0" altnames="ViStorage">
+<contentpackage name="ViStorage  Dedicated Crates, Icons, Bot Sorting" modversion="1.1.6" corepackage="False" steamworkshopid="2872807976" gameversion="1.0.9.0" altnames="ViStorage">
   <Item file="%ModDir%/containershelf.xml" />
   <Other file="%ModDir%/containerssprites.png" />
   <Item file="%ModDir%/containers.xml" />

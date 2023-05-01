@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<contentpackage name="ViStorage Munitions" modversion="1.0.0" corepackage="False" steamworkshopid="2969762557" gameversion="1.0.9.0">
+  <Item file="%ModDir%/MunWarpcrate.xml" />
+  <Other file="%ModDir%/AlienCrateholder.ogg" />
+  <Other file="%ModDir%/AlienCrateRaysMun.png" />
+  <Other file="%ModDir%/CellLightMun.png" />
+  <Other file="%ModDir%/CrateholderMun.png" />
+</contentpackage>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Items>
+<Item name="Alien Warpcrate [Munitions]" identifier="toolboxmunitions" category="Equipment" tags="resourcecontainer,toolbox,mobilecontainer,tool" cargocontaineridentifier="metalcrate" showcontentsintooltip="true" Scale="1.0" fireproof="true" description="A strange container humming with alien energy. Has extreme capacity, but can only hold railgun shells, depth charges and ammunition boxes" impactsoundtag="impact_metal_heavy" waterproof="true">
+  <Deconstruct time="10">
+    <Item identifier="dementonite" />
+    <Item identifier="dementonite" />
+  </Deconstruct>
+  <Fabricate suitablefabricators="fabricator" requiredtime="300">
+    <Item identifier="dementonite" />
+    <Item identifier="alientrinket1" />
+    <Item identifier="alienpowercell" />
+    <Item identifier="dementonite" />
+  </Fabricate>
+  <InventoryIcon texture="%ModDir%/CrateholderMun.png" sourcerect="0,0,116,96" origin="0.5,0.6" />
+  <Sprite texture="%ModDir%/CrateholderMun.png" sourcerect="0,0,116,96" origin="0.5,0.5" />
+  <Body width="87" height="71" density="20" />
+  <Holdable slots="RightHand+LeftHand" holdpos="0,-80" handle1="-30,14" handle2="30,14" aimable="false" msg="ItemMsgPickUpSelect" />
+  <ItemContainer capacity="120" keepopenwhenequipped="false" movableframe="true">
+    <Containable items="railgunequipment, railgunammo, depthchargeammo, ammobox " />
+    <StatusEffect type="Always" target="This">
+      <sound file="%ModDir%/AlienCrateholder.ogg" range="100.0" loop="true" />
+    </StatusEffect>
+  </ItemContainer>
+  <LightComponent canbeselected="false" color="0.0,0.7,0.7,1.0" castshadows="true" IsOn="true" Flicker="0.2" FlickerSpeed="0.1" pulsefrequency="0.1" pulseamount="0.7">
+    <LightTexture texture="%ModDir%/AlienCrateRays.png" origin="0.5,0.5" />
+    <sprite texture="%ModDir%/CellLight.png" origin="0.5,0.5" sourcerect="0,0,116,96" />
+  </LightComponent>
+  <aitarget sightrange="1000" soundrange="200" fadeouttime="2" />
+  <Upgrade gameversion="0.10.0.0" scale="2.0" />
+</Item>
+</Items>
